@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Financial Education Articles | Paise Ki Pathshala</title>
+<meta name="description" content="Read expert articles on income tax, GST, mutual funds, SIP, and personal finance. Free financial education by Paise Ki Pathshala.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;color:#333;line-height:1.6;background:#f5f5f5}
+.header{background:linear-gradient(135deg,#1a237e,#0d47a1);color:#fff;padding:20px;text-align:center}
+.header h1{font-size:1.8rem}
+.header a{color:#ff9800;text-decoration:none;font-weight:600}
+.header p{margin-top:5px;opacity:0.9}
+.container{max-width:900px;margin:0 auto;padding:30px 20px}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:20px}
+.blog-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);transition:transform 0.3s,box-shadow 0.3s}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.15)}
+.blog-card .tag{display:inline-block;background:#ff9800;color:#fff;padding:4px 12px;border-radius:20px;font-size:0.75rem;font-weight:600;margin-bottom:10px}
+.blog-card .content{padding:20px}
+.blog-card h3{color:#1a237e;margin-bottom:8px;font-size:1.1rem}
+.blog-card p{color:#666;font-size:0.9rem;margin-bottom:15px}
+.blog-card .read-more{color:#ff9800;text-decoration:none;font-weight:600;font-size:0.9rem}
+.blog-card .read-more:hover{text-decoration:underline}
+.blog-card .meta{font-size:0.8rem;color:#999;margin-bottom:8px}
+footer{background:#1a237e;color:#fff;text-align:center;padding:20px;margin-top:40px}
+footer a{color:#ff9800;text-decoration:none}
+.search-box{width:100%;padding:12px 20px;border:2px solid #ddd;border-radius:8px;font-size:1rem;margin-bottom:20px}
+.search-box:focus{border-color:#1a237e;outline:none}
+</style>
+</head>
+<body>
+<div class="header">
+<p><a href="/paise-ki-pathshala/">&#8592; Back to Home</a></p>
+<h1>Paise Ki Pathshala Blog</h1>
+<p>Expert articles on tax, investment & personal finance</p>
+</div>
+<div class="container">
+<input type="text" class="search-box" placeholder="Search articles..." id="searchBox" onkeyup="filterArticles()">
+<div class="blog-grid" id="blogGrid">
+
+<div class="blog-card" data-tags="income tax itr filing salaried">
+<div class="content">
+<span class="tag">Income Tax</span>
+<p class="meta">January 2025 &bull; 10 min read</p>
+<h3>Complete Guide to ITR Filing 2025-26</h3>
+<p>Step-by-step guide to filing your Income Tax Return. Which ITR form to use, documents needed, deadlines and penalties explained.</p>
+<a href="itr-filing-guide-2025-26.html" class="read-more">Read Full Article &#8594;</a>
+</div>
+</div>
+
+<div class="blog-card" data-tags="gst registration business">
+<div class="content">
+<span class="tag">GST</span>
+<p class="meta">January 2025 &bull; 8 min read</p>
+<h3>GST Registration Guide for Businesses</h3>
+<p>Everything about GST registration - who needs it, documents required, step-by-step process, and common mistakes to avoid.</p>
+<a href="gst-registration-guide.html" class="read-more">Read Full Article &#8594;</a>
+</div>
+</div>
+
+<div class="blog-card" data-tags="sip lumpsum investment mutual funds">
+<div class="content">
+<span class="tag">Investment</span>
+<p class="meta">January 2025 &bull; 8 min read</p>
+<h3>SIP vs Lumpsum: Which is Better?</h3>
+<p>A comprehensive comparison of SIP and Lumpsum investment strategies. Learn when to use each approach for maximum returns.</p>
+<a href="sip-vs-lumpsum-investment.html" class="read-more">Read Full Article &#8594;</a>
+</div>
+</div>
+
+<div class="blog-card" data-tags="mutual funds investment beginners">
+<div class="content">
+<span class="tag">Mutual Funds</span>
+<p class="meta">January 2025 &bull; 10 min read</p>
+<h3>Mutual Funds for Beginners: Complete Guide</h3>
+<p>Learn mutual funds from scratch. Types, how to invest, risks, returns, and expert tips for first-time investors in India.</p>
+<a href="mutual-funds-beginners-guide.html" class="read-more">Read Full Article &#8594;</a>
+</div>
+</div>
+
+<div class="blog-card" data-tags="income tax salaried employees deductions">
+<div class="content">
+<span class="tag">Tax Planning</span>
+<p class="meta">January 2025 &bull; 8 min read</p>
+<h3>Income Tax Basics for Salaried Employees</h3>
+<p>Understand salary taxation, tax slabs, HRA exemption, Section 80C deductions, and how to choose between old and new regime.</p>
+<a href="income-tax-basics-salaried.html" class="read-more">Read Full Article &#8594;</a>
+</div>
+</div>
+
+</div>
+</div>
+<footer>
+<p>&copy; 2025 Paise Ki Pathshala | <a href="/paise-ki-pathshala/">Home</a></p>
+<p>A unit of The Consulting Crew Private Limited | CIN: U69200RJ2026PTC111856</p>
+</footer>
+<script>
+function filterArticles(){
+const q=document.getElementById('searchBox').value.toLowerCase();
+const cards=document.querySelectorAll('.blog-card');
+cards.forEach(c=>{
+const text=c.textContent.toLowerCase()+' '+c.dataset.tags;
+c.style.display=text.includes(q)?'':'none';
+});
+}
+</script>
+</body>
+</html>
