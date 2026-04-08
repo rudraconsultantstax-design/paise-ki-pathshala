@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rudraconsultantstax-design.github.io/paise-ki-pathshala/sitemap.xml
