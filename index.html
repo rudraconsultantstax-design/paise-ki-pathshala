@@ -1,90 +1,1711 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Paise Ki Pathshala Private Limited | EDUCATE - INVEST - GROW</title><meta name="description" content="India's trusted financial education, tax compliance & investment advisory platform."><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><style>
-*{margin:0;padding:0;box-sizing:border-box}:root{--primary:#1a237e;--primary-light:#3949ab;--accent:#ff6f00;--accent-light:#ffa726;--bg:#f8f9ff;--white:#fff;--dark:#1a1a2e;--gray:#64748b;--light-gray:#e2e8f0;--success:#10b981;--radius:12px;--shadow:0 4px 20px rgba(0,0,0,.08)}body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--dark);line-height:1.6;overflow-x:hidden}h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;font-weight:700}a{text-decoration:none;color:inherit}.container{max-width:1200px;margin:0 auto;padding:0 20px}
-/* Header */
-.header{background:var(--white);position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.06);padding:0 0}.header .container{display:flex;align-items:center;justify-content:space-between;height:70px}.logo{display:flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-weight:800;font-size:1.3rem;color:var(--primary)}.logo i{font-size:1.8rem;color:var(--accent)}.logo span{font-size:.65rem;color:var(--accent);display:block;letter-spacing:3px;font-weight:600}.nav{display:flex;align-items:center;gap:28px}.nav a{font-size:.88rem;font-weight:500;color:var(--dark);transition:.3s;position:relative}.nav a:hover{color:var(--primary)}.nav a.active{color:var(--primary);font-weight:600}.nav-cta{background:linear-gradient(135deg,var(--accent),var(--accent-light));color:var(--white)!important;padding:10px 24px;border-radius:8px;font-weight:600!important;font-size:.85rem!important;transition:transform .3s,box-shadow .3s}.nav-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,111,0,.3)}.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px}.hamburger span{width:24px;height:2px;background:var(--dark);transition:.3s}
-/* Hero */
-.hero{background:linear-gradient(135deg,#1a237e 0%,#283593 50%,#1565c0 100%);color:var(--white);padding:80px 0 60px;position:relative;overflow:hidden}.hero::after{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;border-radius:50%;background:rgba(255,255,255,.03)}.hero h1{font-size:2.8rem;line-height:1.2;margin-bottom:16px;max-width:600px}.hero p{font-size:1.1rem;opacity:.9;max-width:500px;margin-bottom:30px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.hero-stats{display:flex;gap:30px;margin-top:20px}.hero-stats div{text-align:center}.hero-stats h3{font-size:1.6rem;color:var(--accent-light)}.hero-stats p{font-size:.75rem;opacity:.7}.hero-visual{display:flex;justify-content:center;align-items:center}.hero-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hero-card{background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:20px;text-align:center}.hero-card i{font-size:2rem;margin-bottom:8px;color:var(--accent-light)}.hero-card h4{font-size:.85rem;font-weight:500}
-/* Buttons */
-.btn{display:inline-block;padding:12px 28px;border-radius:8px;font-weight:600;font-size:.9rem;cursor:pointer;transition:all .3s;border:none}.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-light));color:var(--white)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(255,111,0,.3)}.btn-outline{border:2px solid var(--white);color:var(--white);background:transparent}.btn-outline:hover{background:var(--white);color:var(--primary)}.btn-dark{background:var(--primary);color:var(--white)}.btn-dark:hover{background:var(--primary-light)}
-/* Sections */
-.section{padding:70px 0}.section-title{text-align:center;margin-bottom:50px}.section-title h2{font-size:2.2rem;color:var(--dark);margin-bottom:10px}.section-title p{color:var(--gray);font-size:1rem;max-width:600px;margin:0 auto}.section-tag{display:inline-block;background:linear-gradient(135deg,rgba(26,35,126,.1),rgba(255,111,0,.1));color:var(--primary);padding:6px 16px;border-radius:20px;font-size:.75rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:12px}
-/* Cards */
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}.card{background:var(--white);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);transition:transform .3s,box-shadow .3s;border:1px solid transparent}.card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.12);border-color:var(--accent)}.card-icon{width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:16px;color:var(--white)}.card h3{font-size:1.1rem;margin-bottom:8px}.card p{color:var(--gray);font-size:.88rem;line-height:1.6}
-/* Products Grid */
-.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}.product-card{background:var(--white);border-radius:var(--radius);padding:24px;text-align:center;box-shadow:var(--shadow);transition:.3s;cursor:pointer;border:2px solid transparent}.product-card:hover{border-color:var(--primary);transform:translateY(-3px)}.product-card i{font-size:2.2rem;color:var(--primary);margin-bottom:12px}.product-card h4{font-size:1rem;margin-bottom:6px}.product-card p{font-size:.8rem;color:var(--gray)}
-/* Calculator */
-.calc-container{background:var(--white);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);max-width:500px;margin:0 auto}.calc-container h3{margin-bottom:20px;color:var(--primary)}.calc-container label{display:block;font-size:.85rem;font-weight:500;margin-bottom:6px;color:var(--dark)}.calc-container input,.calc-container select{width:100%;padding:10px 14px;border:1.5px solid var(--light-gray);border-radius:8px;font-size:.9rem;margin-bottom:14px;transition:.3s;font-family:'Inter',sans-serif}.calc-container input:focus,.calc-container select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(26,35,126,.1)}.calc-btn{width:100%;padding:12px;background:linear-gradient(135deg,var(--primary),var(--primary-light));color:var(--white);border:none;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;transition:.3s}.calc-btn:hover{transform:translateY(-1px)}.calc-result{margin-top:20px;padding:16px;background:linear-gradient(135deg,rgba(26,35,126,.05),rgba(255,111,0,.05));border-radius:8px;text-align:center}.calc-result h4{color:var(--primary);font-size:1.5rem}.calc-result p{font-size:.8rem;color:var(--gray)}
-/* Tabs */
-.tabs{display:flex;gap:8px;margin-bottom:30px;flex-wrap:wrap;justify-content:center}.tab-btn{padding:8px 20px;border-radius:20px;border:1.5px solid var(--light-gray);background:var(--white);font-size:.82rem;font-weight:500;cursor:pointer;transition:.3s;font-family:'Inter',sans-serif}.tab-btn.active,.tab-btn:hover{background:var(--primary);color:var(--white);border-color:var(--primary)}.tab-content{display:none}.tab-content.active{display:block}
-/* Footer */
-.footer{background:var(--dark);color:var(--white);padding:50px 0 20px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:30px}.footer h4{font-size:1rem;margin-bottom:16px;color:var(--accent-light)}.footer p,.footer a{font-size:.85rem;color:rgba(255,255,255,.7);line-height:2}.footer a:hover{color:var(--accent-light)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:.75rem;color:rgba(255,255,255,.5)}.footer-socials{display:flex;gap:12px}.footer-socials a{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:.3s}.footer-socials a:hover{background:var(--accent);color:var(--white)}
-/* Blog */
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}.blog-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.3s}.blog-card:hover{transform:translateY(-3px)}.blog-card-img{height:180px;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;color:var(--white);font-size:3rem}.blog-card-body{padding:20px}.blog-card-body h4{font-size:1rem;margin-bottom:8px}.blog-card-body p{font-size:.82rem;color:var(--gray);margin-bottom:10px}.blog-tag{display:inline-block;background:rgba(26,35,126,.08);color:var(--primary);padding:3px 10px;border-radius:12px;font-size:.7rem;font-weight:600}
-/* Contact */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:12px 16px;border:1.5px solid var(--light-gray);border-radius:8px;font-size:.9rem;margin-bottom:14px;font-family:'Inter',sans-serif;transition:.3s}.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--primary)}.contact-form textarea{min-height:120px;resize:vertical}.contact-info-card{background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:16px;display:flex;gap:16px;align-items:center}.contact-info-card i{font-size:1.3rem;color:var(--primary);width:40px}
-/* Page */
-.page{display:none}.page.active{display:block}
-/* Animations */
-@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.fade-in{animation:fadeIn .6s ease}
-/* Mobile */
-@media(max-width:768px){.hero h1{font-size:1.8rem}.hero-grid,.contact-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--white);flex-direction:column;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.1);gap:16px}.nav.open{display:flex}.hamburger{display:flex}.hero-stats{flex-wrap:wrap;gap:15px}.hero-cards{grid-template-columns:1fr}.products-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:480px){.footer-grid{grid-template-columns:1fr}.products-grid{grid-template-columns:1fr}.hero-stats div{flex:1 1 45%}}
-</style></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Paise Ki Pathshala — CA-led Tax Calculators, Learning Tracks &amp; Compliance Tools</title>
+<meta name="description" content="CA-led practitioner-grade tax, investing and MSME compliance platform. Free calculators for Old vs New regime, HRA, TDS, GST, MSME loan eligibility and compliance calendar — with expert review on WhatsApp.">
+<meta name="keywords" content="income tax calculator, old vs new regime, HRA calculator, TDS calculator, GST calculator, MSME loan eligibility, compliance calendar, CA Ashish Sharma, Paise Ki Pathshala">
+<link rel="canonical" href="https://paisekipathshala.in/">
+<meta property="og:title" content="Paise Ki Pathshala — Calculator-first finance platform, led by CAs">
+<meta property="og:description" content="Old vs New regime side-by-side, HRA, TDS, GST, MSME Loan Eligibility, Compliance Calendar. Free tools + expert CA review.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#0b1020;
+  --ink-2:#1a213a;
+  --paper:#fbfaf7;
+  --paper-2:#f3efe6;
+  --rule:#e8e3d6;
+  --line:#d9d2c0;
+  --muted:#5a6076;
+  --brand:#0e2a52;
+  --brand-2:#163a6a;
+  --accent:#c8852b;
+  --accent-2:#e3a04d;
+  --gold:#b88a2c;
+  --green:#0f6f4a;
+  --red:#b3261e;
+  --maxw:1240px;
+  --radius:14px;
+  --shadow-sm:0 1px 2px rgba(11,16,32,.05),0 1px 1px rgba(11,16,32,.04);
+  --shadow:0 6px 24px -8px rgba(11,16,32,.18),0 2px 6px rgba(11,16,32,.05);
+  --shadow-lg:0 24px 60px -20px rgba(11,16,32,.35);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4,.serif{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em;color:var(--ink)}
+h1{font-size:clamp(2.1rem,4.2vw,3.6rem);line-height:1.05;letter-spacing:-.025em}
+h2{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.1}
+h3{font-size:1.18rem;line-height:1.25}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* ===== Top utility bar ===== */
+.topbar{background:var(--ink);color:#e9e6dc;font-size:.78rem;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.topbar a{color:#e9e6dc;border-bottom:1px dotted rgba(255,255,255,.3)}
+.topbar .pill{background:rgba(255,255,255,.08);padding:2px 10px;border-radius:99px;border:1px solid rgba(255,255,255,.12)}
+
+/* ===== Header ===== */
+.header{background:var(--paper);position:sticky;top:0;z-index:100;border-bottom:1px solid var(--rule)}
+.header .container{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:1.2rem;box-shadow:inset 0 0 0 2px rgba(255,255,255,.12)}
+.brand-mark::after{content:"";position:absolute}
+.brand-text{line-height:1.05}
+.brand-text strong{font-family:'Fraunces',serif;font-weight:600;font-size:1.18rem;display:block;letter-spacing:-.01em}
+.brand-text span{font-size:.66rem;letter-spacing:.22em;color:var(--accent);font-weight:600;text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font-size:.9rem;font-weight:500;color:var(--ink-2);padding:8px 12px;border-radius:8px;transition:.2s;display:inline-flex;align-items:center;gap:6px}
+.nav a:hover{background:var(--paper-2);color:var(--brand)}
+.nav a.active{color:var(--brand);background:var(--paper-2)}
+.nav .cta{background:var(--ink);color:#fff;padding:10px 18px;border-radius:8px;font-weight:600}
+.nav .cta:hover{background:var(--brand);color:#fff}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{width:22px;height:2px;background:var(--ink);transition:.3s}
+
+/* ===== Hero ===== */
+.hero{position:relative;padding:64px 0 80px;background:
+  radial-gradient(ellipse 60% 50% at 80% 0%, rgba(200,133,43,.10), transparent 60%),
+  radial-gradient(ellipse 50% 40% at 10% 100%, rgba(14,42,82,.06), transparent 60%),
+  var(--paper);
+  overflow:hidden;border-bottom:1px solid var(--rule)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(11,16,32,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(11,16,32,.04) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 80%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding:6px 12px;border:1px solid var(--line);background:rgba(255,255,255,.6);border-radius:99px;backdrop-filter:blur(4px)}
+.eyebrow .dot{width:6px;height:6px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 3px rgba(200,133,43,.18)}
+.hero h1{margin:18px 0}
+.hero h1 em{font-style:italic;color:var(--accent);font-weight:500}
+.hero p.lede{font-size:1.12rem;color:var(--muted);max-width:540px;margin-bottom:28px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:10px;font-weight:600;font-size:.95rem;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,color .2s;border:none;font-family:inherit}
+.btn-primary{background:var(--ink);color:#fff}
+.btn-primary:hover{background:var(--brand);transform:translateY(-1px);box-shadow:var(--shadow)}
+.btn-secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-secondary:hover{border-color:var(--ink);transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--gold)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1ebd5b}
+.btn-ghost{background:transparent;color:var(--ink);border:1px dashed var(--line)}
+.btn-ghost:hover{border-color:var(--ink);background:#fff}
+.hero-author{display:flex;align-items:center;gap:14px;margin-top:32px;padding-top:28px;border-top:1px solid var(--rule);max-width:520px}
+.hero-author .avatar{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#2c4a7c,#0e2a52);display:grid;place-items:center;color:#fff;font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;flex-shrink:0;box-shadow:0 0 0 3px #fff,0 0 0 4px var(--rule)}
+.hero-author .meta{font-size:.85rem;line-height:1.4}
+.hero-author .meta strong{font-weight:600;color:var(--ink)}
+.hero-author .meta span{color:var(--muted)}
+.hero-author .credentials{font-size:.72rem;color:var(--accent);font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
+
+/* Hero calculator preview card */
+.hero-tool{background:#fff;border-radius:18px;box-shadow:var(--shadow-lg);border:1px solid var(--rule);overflow:hidden;position:relative;transform:rotate(.4deg)}
+.hero-tool::before{content:"";position:absolute;top:-30px;right:-30px;width:160px;height:160px;background:radial-gradient(circle,rgba(200,133,43,.25),transparent 70%)}
+.hero-tool-head{padding:18px 22px;background:var(--ink);color:#fff;display:flex;justify-content:space-between;align-items:center}
+.hero-tool-head .badge{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-2);font-weight:600}
+.hero-tool-head h4{color:#fff;font-size:1.1rem;font-family:'Fraunces',serif;font-weight:600;margin-top:2px}
+.hero-tool-head .live{display:flex;align-items:center;gap:6px;font-size:.72rem;color:#9aa5c4}
+.hero-tool-head .live .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.2);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.5}}
+.hero-tool-body{padding:22px}
+.hero-tool-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--rule)}
+.hero-tool-row:last-child{border-bottom:0}
+.hero-tool-row label{font-size:.85rem;color:var(--muted)}
+.hero-tool-row .val{font-family:'JetBrains Mono',monospace;font-size:.95rem;color:var(--ink);font-weight:600}
+.hero-tool-compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.compare-card{padding:14px;border-radius:12px;border:1px solid var(--rule);background:var(--paper)}
+.compare-card.winner{background:linear-gradient(180deg,#f0f8f3,#fff);border-color:#9ad1b6}
+.compare-card .label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.compare-card .amount{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:600;color:var(--ink);margin-top:4px}
+.compare-card.winner .amount{color:var(--green)}
+.compare-card .tag-win{display:inline-block;margin-top:6px;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--green);padding:2px 8px;border-radius:99px;font-weight:600}
+.hero-tool-foot{padding:14px 22px;background:var(--paper-2);font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.hero-tool-foot a{color:var(--brand);font-weight:600;border-bottom:1px solid var(--brand)}
+
+/* Hero floating chips */
+.float-chip{position:absolute;background:#fff;border:1px solid var(--rule);box-shadow:var(--shadow);padding:10px 14px;border-radius:99px;font-size:.78rem;font-weight:500;display:flex;align-items:center;gap:8px;z-index:2}
+.float-chip i{color:var(--accent)}
+.chip-1{top:8%;left:-3%;animation:floaty 6s ease-in-out infinite}
+.chip-2{bottom:14%;right:-4%;animation:floaty 7s ease-in-out infinite reverse}
+@keyframes floaty{50%{transform:translateY(-8px)}}
+
+/* ===== Trust strip ===== */
+.trust-strip{background:#fff;border-bottom:1px solid var(--rule);padding:22px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;align-items:center;text-align:center}
+.trust-item{font-size:.85rem;color:var(--muted)}
+.trust-item strong{display:block;font-family:'Fraunces',serif;font-size:1.7rem;color:var(--ink);font-weight:600;margin-bottom:2px}
+.trust-item strong .plus{color:var(--accent)}
+
+/* ===== Section base ===== */
+.section{padding:84px 0;position:relative}
+.section.alt{background:var(--paper-2)}
+.section.dark{background:var(--ink);color:#e9e6dc}
+.section.dark h1,.section.dark h2,.section.dark h3,.section.dark h4{color:#fff}
+.section-head{max-width:760px;margin-bottom:48px}
+.section-head.center{margin:0 auto 48px;text-align:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:14px}
+.kicker .line{width:36px;height:1px;background:var(--accent)}
+.section-head h2{margin-bottom:14px}
+.section-head p{color:var(--muted);font-size:1.05rem;max-width:640px}
+.section.dark .section-head p{color:#a8b0c8}
+
+/* ===== Calculator hub ===== */
+.calc-hub{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.calc-card{grid-column:span 4;background:#fff;border:1px solid var(--rule);border-radius:16px;padding:26px;transition:all .25s;position:relative;overflow:hidden;cursor:pointer;display:flex;flex-direction:column}
+.calc-card:hover{transform:translateY(-3px);border-color:var(--ink);box-shadow:var(--shadow)}
+.calc-card.flagship{grid-column:span 6;background:linear-gradient(135deg,#0e2a52 0%,#163a6a 60%,#1f4d8a 100%);color:#fff;border-color:#1f4d8a}
+.calc-card.flagship:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.calc-card.flagship h3,.calc-card.flagship .calc-head{color:#fff}
+.calc-card .calc-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px}
+.calc-card .icon{width:46px;height:46px;border-radius:12px;background:var(--paper-2);display:grid;place-items:center;font-size:1.15rem;color:var(--brand)}
+.calc-card.flagship .icon{background:rgba(255,255,255,.12);color:var(--accent-2)}
+.calc-card .tag{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--paper-2);padding:4px 10px;border-radius:99px}
+.calc-card.flagship .tag{background:rgba(255,255,255,.14);color:var(--accent-2)}
+.calc-card h3{margin-bottom:8px}
+.calc-card p{font-size:.9rem;color:var(--muted);margin-bottom:18px;flex:1}
+.calc-card.flagship p{color:#c5cce0}
+.calc-card .open{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;font-weight:600;color:var(--brand);align-self:flex-start}
+.calc-card.flagship .open{color:var(--accent-2)}
+.calc-card .open i{transition:transform .2s}
+.calc-card:hover .open i{transform:translateX(4px)}
+.calc-card .new{position:absolute;top:18px;right:18px;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;background:var(--accent);color:#fff;padding:3px 8px;border-radius:99px;font-weight:700}
+
+/* ===== Learning Tracks ===== */
+.tracks-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.track{background:#fff;border:1px solid var(--rule);border-radius:16px;overflow:hidden;transition:.2s;cursor:pointer;display:flex;flex-direction:column}
+.track:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--ink)}
+.track-head{padding:22px 22px 14px;border-bottom:1px solid var(--rule);position:relative;overflow:hidden}
+.track-head::after{content:"";position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;opacity:.07}
+.track-1 .track-head::after{background:#0e2a52}
+.track-2 .track-head::after{background:#c8852b}
+.track-3 .track-head::after{background:#0f6f4a}
+.track-4 .track-head::after{background:#7c3aed}
+.track-num{font-family:'Fraunces',serif;font-size:.85rem;color:var(--muted);letter-spacing:.06em}
+.track h3{margin:6px 0 4px;font-size:1.18rem}
+.track .for{font-size:.78rem;color:var(--accent);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.track-body{padding:18px 22px 22px;flex:1;display:flex;flex-direction:column}
+.track ul{list-style:none;margin-bottom:18px;flex:1}
+.track ul li{font-size:.85rem;color:var(--ink-2);padding:6px 0;display:flex;gap:8px}
+.track ul li i{color:var(--accent);font-size:.8rem;margin-top:4px}
+.track-meta{display:flex;justify-content:space-between;font-size:.74rem;color:var(--muted);margin-bottom:14px;padding-top:10px;border-top:1px dashed var(--rule)}
+.track-go{font-size:.85rem;font-weight:600;color:var(--brand);display:inline-flex;align-items:center;gap:6px}
+
+/* ===== Flagship: Old vs New Regime ===== */
+.flagship-section{background:linear-gradient(135deg,#0a1730 0%,#0e2a52 100%);color:#fff;padding:90px 0;position:relative;overflow:hidden}
+.flagship-section::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%, rgba(200,133,43,.15), transparent 40%),radial-gradient(circle at 80% 70%, rgba(200,133,43,.08), transparent 50%);pointer-events:none}
+.flagship-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center;position:relative}
+.flagship-section .kicker{color:var(--accent-2)}
+.flagship-section h2{color:#fff}
+.flagship-section p.lede{color:#c5cce0;font-size:1.05rem;margin-bottom:24px}
+.flagship-bullets{margin-bottom:28px}
+.flagship-bullets li{display:flex;gap:12px;padding:8px 0;font-size:.93rem;color:#dfe4f1}
+.flagship-bullets li i{color:var(--accent-2);font-size:.95rem;margin-top:4px}
+
+/* Calculator UI inside flagship */
+.calc-shell{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:30px;backdrop-filter:blur(8px)}
+.calc-shell h4{color:#fff;font-size:1.15rem;margin-bottom:18px;font-family:'Fraunces',serif;display:flex;justify-content:space-between;align-items:center}
+.calc-shell h4 .reg{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:var(--accent-2);letter-spacing:.1em;font-weight:600}
+.calc-field{margin-bottom:14px}
+.calc-field label{display:block;font-size:.78rem;color:#a8b0c8;margin-bottom:6px;font-weight:500;letter-spacing:.02em}
+.calc-field input,.calc-field select{width:100%;padding:11px 14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:8px;color:#fff;font-size:.95rem;font-family:'JetBrains Mono',monospace;transition:.2s}
+.calc-field input:focus,.calc-field select:focus{outline:none;border-color:var(--accent-2);background:rgba(255,255,255,.1)}
+.calc-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.calc-cta{width:100%;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-weight:600;font-size:.95rem;margin-top:6px;cursor:pointer;font-family:inherit;transition:.2s}
+.calc-cta:hover{background:var(--gold)}
+.calc-output{margin-top:18px;padding:18px;background:#fff;color:var(--ink);border-radius:12px;display:none}
+.calc-output.active{display:block;animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.compare-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.compare-out{padding:14px;background:var(--paper);border-radius:10px;border:1px solid var(--rule)}
+.compare-out.win{background:linear-gradient(180deg,#eaf6ef,#fff);border-color:#9ad1b6}
+.compare-out .l{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.compare-out .v{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--ink);font-weight:600;margin-top:2px}
+.compare-out.win .v{color:var(--green)}
+.compare-out .sub{font-size:.78rem;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono',monospace}
+.verdict{padding:14px;background:var(--paper-2);border-radius:10px;display:flex;justify-content:space-between;align-items:center;font-size:.88rem}
+.verdict strong{font-weight:600;color:var(--ink)}
+.verdict .save{color:var(--green);font-weight:700;font-family:'JetBrains Mono',monospace}
+.calc-disclaimer{font-size:.72rem;color:#8a92ad;margin-top:14px;text-align:center}
+
+/* ===== Author / Trust block ===== */
+.author-block{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.author-card{background:#fff;border:1px solid var(--rule);border-radius:20px;padding:36px;box-shadow:var(--shadow);position:relative}
+.author-card .quote-mark{position:absolute;top:14px;right:24px;font-family:'Fraunces',serif;font-size:5rem;color:var(--paper-2);line-height:1}
+.author-avatar{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,#2c4a7c,#0e2a52);display:grid;place-items:center;color:#fff;font-family:'Fraunces',serif;font-size:2rem;font-weight:600;box-shadow:0 0 0 4px #fff,0 0 0 5px var(--rule);margin-bottom:16px}
+.author-card h3{font-size:1.4rem;margin-bottom:4px}
+.author-card .role{color:var(--accent);font-size:.84rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+.author-card .bio{font-size:.95rem;color:var(--ink-2);margin-bottom:18px}
+.author-card .creds{display:flex;flex-wrap:wrap;gap:8px}
+.author-card .creds span{background:var(--paper-2);font-size:.74rem;padding:5px 10px;border-radius:99px;color:var(--ink-2);font-weight:500;border:1px solid var(--rule)}
+.author-points li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.author-points li:last-child{border-bottom:0}
+.author-points .pnum{font-family:'Fraunces',serif;color:var(--accent);font-size:1.4rem;font-weight:600;line-height:1;flex-shrink:0;width:36px}
+.author-points h4{font-size:1rem;margin-bottom:4px}
+.author-points p{font-size:.88rem;color:var(--muted)}
+
+/* ===== Ask CA Ashish ===== */
+.qa-section{background:var(--paper-2);padding:84px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.qa-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:flex-start}
+.qa-promo{position:sticky;top:90px}
+.qa-promo h2{margin-bottom:16px}
+.qa-promo p{color:var(--muted);margin-bottom:20px}
+.qa-cta-row{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.qa-stat{display:flex;gap:14px;align-items:center;padding:12px 14px;background:#fff;border:1px solid var(--rule);border-radius:10px;margin-bottom:10px}
+.qa-stat strong{font-family:'Fraunces',serif;font-size:1.4rem;color:var(--brand);display:block;line-height:1}
+.qa-stat span{font-size:.8rem;color:var(--muted)}
+.qa-stat i{font-size:1.2rem;color:var(--accent)}
+.qa-list{display:flex;flex-direction:column;gap:12px}
+.qa-item{background:#fff;border:1px solid var(--rule);border-radius:14px;overflow:hidden;transition:.2s}
+.qa-item:hover{border-color:var(--ink)}
+.qa-q{padding:18px 22px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:14px}
+.qa-q .qmeta{display:flex;align-items:center;gap:12px;flex:1}
+.qa-q .qcat{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;background:rgba(200,133,43,.1);padding:3px 8px;border-radius:99px;flex-shrink:0}
+.qa-q .qtext{font-weight:600;font-size:.95rem;color:var(--ink)}
+.qa-q .qtoggle{width:28px;height:28px;border-radius:50%;background:var(--paper-2);display:grid;place-items:center;color:var(--muted);transition:.2s;flex-shrink:0}
+.qa-item.open .qtoggle{background:var(--ink);color:#fff;transform:rotate(180deg)}
+.qa-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s ease;padding:0 22px;font-size:.92rem;color:var(--ink-2);line-height:1.65;border-top:0 solid var(--rule)}
+.qa-item.open .qa-a{max-height:400px;padding:18px 22px 22px;border-top:1px solid var(--rule)}
+.qa-a .byline{display:flex;align-items:center;gap:10px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--rule);font-size:.78rem;color:var(--muted)}
+.qa-a .byline strong{color:var(--brand);font-weight:600}
+
+/* ===== Compliance Calendar ===== */
+.cal-section{padding:84px 0;background:var(--paper)}
+.cal-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:flex-start}
+.cal-list{background:#fff;border:1px solid var(--rule);border-radius:18px;overflow:hidden}
+.cal-head{padding:18px 22px;background:var(--ink);color:#fff;display:flex;justify-content:space-between;align-items:center}
+.cal-head h4{color:#fff;font-size:1.05rem;font-family:'Fraunces',serif}
+.cal-head .sel{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#fff;padding:6px 10px;border-radius:6px;font-family:inherit;font-size:.82rem}
+.cal-row{padding:16px 22px;border-bottom:1px solid var(--rule);display:flex;align-items:center;gap:16px}
+.cal-row:last-child{border-bottom:0}
+.cal-date{flex-shrink:0;width:60px;text-align:center;padding:8px 0;border-radius:8px;background:var(--paper-2)}
+.cal-date .d{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:600;line-height:1;color:var(--ink)}
+.cal-date .m{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:2px;font-weight:600}
+.cal-info{flex:1}
+.cal-info h5{font-size:.95rem;font-weight:600;margin-bottom:2px;color:var(--ink);font-family:'Inter',sans-serif}
+.cal-info p{font-size:.82rem;color:var(--muted)}
+.cal-pill{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border-radius:99px;font-weight:700;flex-shrink:0}
+.cal-pill.gst{background:#fef0e7;color:#a55114}
+.cal-pill.tds{background:#e6f0f8;color:#1f4d8a}
+.cal-pill.itr{background:#eaf6ef;color:#15724e}
+.cal-pill.roc{background:#f4e9fb;color:#6d2bb9}
+
+/* ===== CTA stripe ===== */
+.cta-stripe{background:var(--ink);color:#fff;padding:64px 0}
+.cta-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center}
+.cta-stripe h2{color:#fff;margin-bottom:14px}
+.cta-stripe p{color:#a8b0c8;font-size:1.02rem;max-width:560px}
+.cta-actions{display:flex;flex-direction:column;gap:10px}
+
+/* ===== Footer ===== */
+.footer{background:var(--ink-2);color:#a8b0c8;padding:64px 0 24px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:36px;margin-bottom:40px}
+.footer h4{color:#fff;font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;font-family:'Inter',sans-serif;font-weight:700}
+.footer .brand-text strong{color:#fff}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:8px}
+.footer ul a{font-size:.88rem;color:#a8b0c8;transition:.2s}
+.footer ul a:hover{color:var(--accent-2)}
+.footer-tagline{font-size:.88rem;margin:14px 0 18px;line-height:1.6}
+.footer-social{display:flex;gap:10px}
+.footer-social a{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.06);display:grid;place-items:center;color:#fff;transition:.2s}
+.footer-social a:hover{background:var(--accent);color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:.78rem;color:#7a8199}
+
+/* ===== Floating WA ===== */
+.wa-float{position:fixed;bottom:24px;right:24px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 12px 30px rgba(37,211,102,.4);z-index:99;animation:waBounce 4s ease-in-out infinite}
+@keyframes waBounce{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.wa-float:hover{background:#1ebd5b;transform:scale(1.08)}
+
+/* ===== Page system ===== */
+.page{display:none}
+.page.active{display:block}
+
+/* ===== Calculator suite (full pages) ===== */
+.calc-suite-grid{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:flex-start}
+.calc-side{position:sticky;top:90px;background:#fff;border:1px solid var(--rule);border-radius:14px;padding:16px}
+.calc-side h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;font-family:'Inter',sans-serif;font-weight:700}
+.calc-side ul{list-style:none;display:flex;flex-direction:column;gap:2px}
+.calc-side li a{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:8px;font-size:.88rem;color:var(--ink-2);font-weight:500;cursor:pointer;transition:.15s}
+.calc-side li a:hover{background:var(--paper-2)}
+.calc-side li a.active{background:var(--ink);color:#fff}
+.calc-side li a.active .badge{background:rgba(255,255,255,.18);color:#fff}
+.calc-side li a .badge{font-size:.62rem;background:var(--paper-2);color:var(--muted);padding:2px 7px;border-radius:99px;font-weight:700;letter-spacing:.06em}
+.calc-side li a.active{color:#fff}
+.calc-main{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:36px;min-height:520px}
+.calc-tool{display:none}
+.calc-tool.active{display:block;animation:fadeIn .3s ease}
+.calc-tool h2{font-size:1.65rem;margin-bottom:6px}
+.calc-tool .lede{color:var(--muted);font-size:.95rem;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--rule)}
+.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.field-grid.three{grid-template-columns:repeat(3,1fr)}
+.field{margin-bottom:0}
+.field label{display:block;font-size:.84rem;font-weight:500;margin-bottom:6px;color:var(--ink-2)}
+.field input,.field select{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:8px;font-size:.94rem;font-family:'JetBrains Mono',monospace;color:var(--ink);transition:.2s;background:#fff}
+.field input:focus,.field select:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(11,16,32,.06)}
+.result-box{margin-top:24px;padding:24px;border-radius:12px;background:var(--paper-2);border:1px solid var(--rule);display:none}
+.result-box.active{display:block;animation:fadeIn .35s ease}
+.result-row{display:flex;justify-content:space-between;padding:8px 0;font-size:.92rem;border-bottom:1px dashed var(--rule)}
+.result-row:last-child{border-bottom:0}
+.result-row strong{font-weight:600;font-family:'JetBrains Mono',monospace}
+.result-headline{font-family:'Fraunces',serif;font-size:2rem;color:var(--brand);font-weight:600;margin-bottom:6px}
+.result-sub{color:var(--muted);font-size:.88rem;margin-bottom:14px}
+.result-actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.eligible{padding:14px;border-radius:10px;font-weight:600;font-size:.95rem;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.eligible.yes{background:#eaf6ef;color:var(--green);border:1px solid #9ad1b6}
+.eligible.maybe{background:#fff4e1;color:#a55114;border:1px solid #e7c485}
+.eligible.no{background:#fdecea;color:var(--red);border:1px solid #e5a7a3}
+.scheme-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.scheme-item{padding:12px;border-radius:8px;border:1px solid var(--rule);font-size:.88rem;background:#fff}
+.scheme-item.match{border-color:var(--green);background:#f4faf6}
+.scheme-item strong{display:block;font-weight:600;color:var(--ink);margin-bottom:2px}
+.scheme-item span{font-size:.78rem;color:var(--muted)}
+
+/* ===== Resources/blog page ===== */
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.res-card{background:#fff;border:1px solid var(--rule);border-radius:14px;overflow:hidden;transition:.2s}
+.res-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--ink)}
+.res-img{height:160px;background:linear-gradient(135deg,#0e2a52,#163a6a);display:grid;place-items:center;color:#fff;font-size:2.5rem;position:relative}
+.res-img.gold{background:linear-gradient(135deg,#c8852b,#e3a04d)}
+.res-img.green{background:linear-gradient(135deg,#0f6f4a,#3a9c75)}
+.res-img.purple{background:linear-gradient(135deg,#5a23a5,#7c3aed)}
+.res-img.red{background:linear-gradient(135deg,#7a1818,#b3261e)}
+.res-img.dark{background:linear-gradient(135deg,#1a213a,#0b1020)}
+.res-body{padding:20px}
+.res-tag{display:inline-block;background:var(--paper-2);color:var(--ink-2);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:99px;font-weight:700;margin-bottom:10px}
+.res-body h4{font-size:1.05rem;font-family:'Fraunces',serif;margin-bottom:8px}
+.res-body p{font-size:.86rem;color:var(--muted);margin-bottom:14px}
+.res-body .read{color:var(--brand);font-size:.85rem;font-weight:600}
+
+/* ===== Solutions/Company/Contact ===== */
+.solutions-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.sol-card{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:24px;transition:.2s}
+.sol-card:hover{border-color:var(--ink);transform:translateY(-3px);box-shadow:var(--shadow)}
+.sol-icon{width:44px;height:44px;border-radius:10px;background:var(--paper-2);display:grid;place-items:center;font-size:1.1rem;color:var(--brand);margin-bottom:14px}
+.sol-card h3{font-size:1.1rem;margin-bottom:6px}
+.sol-card p{font-size:.88rem;color:var(--muted)}
+
+.company-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.detail-card{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:24px}
+.detail-card h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;font-family:'Inter',sans-serif;font-weight:700}
+.detail-card p{font-size:.92rem;margin-bottom:8px}
+.detail-card p strong{display:inline-block;min-width:120px;color:var(--ink)}
+
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:flex-start}
+.contact-form{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:30px}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:.94rem;margin-bottom:14px;font-family:inherit;background:#fff}
+.contact-form textarea{min-height:120px;resize:vertical}
+.contact-info{display:flex;flex-direction:column;gap:14px}
+.ci-card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:18px;display:flex;gap:14px;align-items:center}
+.ci-card i{font-size:1.2rem;color:var(--accent);width:36px;text-align:center}
+.ci-card h5{font-size:.86rem;font-weight:600;margin-bottom:2px}
+.ci-card p,.ci-card a{font-size:.82rem;color:var(--muted)}
+
+/* ===== Mobile ===== */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:50px}
+  .hero-tool{transform:none;max-width:480px;margin:0 auto}
+  .float-chip{display:none}
+  .trust-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+  .calc-hub{gap:14px}
+  .calc-card{grid-column:span 6}
+  .calc-card.flagship{grid-column:span 12}
+  .tracks-grid{grid-template-columns:repeat(2,1fr)}
+  .flagship-grid,.author-block,.qa-grid,.cal-grid,.cta-grid,.contact-grid{grid-template-columns:1fr;gap:30px}
+  .qa-promo{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr 1fr;gap:24px}
+  .calc-suite-grid{grid-template-columns:1fr}
+  .calc-side{position:static}
+  .calc-side ul{flex-direction:row;flex-wrap:wrap}
+  .calc-side li a{font-size:.82rem;padding:8px 10px}
+  .res-grid{grid-template-columns:repeat(2,1fr)}
+  .solutions-grid{grid-template-columns:repeat(2,1fr)}
+  .company-grid{grid-template-columns:1fr}
+}
+@media (max-width:680px){
+  .nav{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:#fff;padding:14px;border-bottom:1px solid var(--rule);box-shadow:var(--shadow)}
+  .nav.open{display:flex;align-items:stretch}
+  .nav a{padding:12px 14px}
+  .hamburger{display:flex}
+  .calc-card,.calc-card.flagship{grid-column:span 12}
+  .tracks-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:20px}
+  .trust-item strong{font-size:1.35rem}
+  .section{padding:60px 0}
+  .hero{padding:48px 0 60px}
+  .calc-main{padding:24px}
+  .field-grid,.field-grid.three{grid-template-columns:1fr}
+  .compare-row{grid-template-columns:1fr}
+  .res-grid,.solutions-grid{grid-template-columns:1fr}
+  .topbar{display:none}
+}
+</style>
+</head>
 <body>
-<!-- Header -->
-<header class="header"><div class="container"><a href="#" class="logo" onclick="showPage('home')"><i class="fas fa-graduation-cap"></i><div>Paise Ki Pathshala<span>EDUCATE - INVEST - GROW</span></div></a><nav class="nav" id="mainNav"><a href="#" class="active" data-page="home" onclick="showPage('home')">Home</a><a href="#" data-page="products" onclick="showPage('products')">Products</a><a href="#" data-page="solutions" onclick="showPage('solutions')">Solutions</a><a href="#" data-page="calculators" onclick="showPage('calculators')">Calculators</a><a href="#" data-page="blog" onclick="showPage('blog')">Resources</a><a href="#" data-page="company" onclick="showPage('company')">Company</a><a href="#" data-page="contact" onclick="showPage('contact')" class="nav-cta">Contact Us</a></nav><div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div></div></header>
-<!-- HOME PAGE -->
+
+<!-- ===== Top utility bar ===== -->
+<div class="topbar"><div class="container">
+  <span><i class="fas fa-shield-halved" style="color:var(--accent-2)"></i> CA-led • Practitioner-grade • <strong style="color:#fff">FY 2025-26 ready</strong></span>
+  <span class="pill">ITR-1 due: <strong style="color:#fff">31 Jul 2026</strong> • GSTR-3B: <strong style="color:#fff">20th monthly</strong></span>
+  <span><a href="https://wa.me/919352115498?text=I%20want%20to%20talk%20to%20CA%20Ashish"><i class="fab fa-whatsapp"></i> WhatsApp CA Ashish &rarr;</a></span>
+</div></div>
+
+<!-- ===== Header ===== -->
+<header class="header"><div class="container">
+  <a href="#" class="brand" onclick="showPage('home');return false">
+    <div class="brand-mark">P</div>
+    <div class="brand-text">
+      <strong>Paise Ki Pathshala</strong>
+      <span>Educate · Invest · Grow</span>
+    </div>
+  </a>
+  <nav class="nav" id="mainNav">
+    <a href="#" data-page="home" class="active" onclick="showPage('home');return false">Home</a>
+    <a href="#" data-page="calculators" onclick="showPage('calculators');return false"><i class="fas fa-calculator"></i> Calculators</a>
+    <a href="#" data-page="tracks" onclick="showPage('tracks');return false">Learning Tracks</a>
+    <a href="#" data-page="ask" onclick="showPage('ask');return false">Ask CA Ashish</a>
+    <a href="#" data-page="blog" onclick="showPage('blog');return false">Resources</a>
+    <a href="#" data-page="company" onclick="showPage('company');return false">About</a>
+    <a href="https://wa.me/919352115498?text=I%20want%20a%20free%20CA%20review" target="_blank" class="cta">Free CA Review</a>
+  </nav>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</div></header>
+
+<!-- ===== HOME PAGE ===== -->
 <div class="page active" id="page-home">
-<section class="hero"><div class="container"><div class="hero-grid"><div><h1>Your Complete Financial Education & Compliance Partner</h1><p>From ITR filing to SIP planning, GST registration to investment advisory. We simplify finance for every Indian.</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a href="#" onclick="showPage('products')" class="btn btn-primary">Explore Products</a><a href="#" onclick="showPage('contact')" class="btn btn-outline">Book Free Consultation</a></div><div class="hero-stats"><div><h3>50+</h3><p>Expert Clients</p></div><div><h3>20+</h3><p>Services</p></div><div><h3>3</h3><p>Divisions</p></div></div></div><div class="hero-visual"><div class="hero-cards"><div class="hero-card"><i class="fas fa-file-invoice-dollar"></i><h4>ITR Filing</h4></div><div class="hero-card"><i class="fas fa-receipt"></i><h4>GST Returns</h4></div><div class="hero-card"><i class="fas fa-chart-line"></i><h4>Investment</h4></div><div class="hero-card"><i class="fas fa-calculator"></i><h4>Calculators</h4></div></div></div></div></div></section>
-<!-- Home Features -->
-<section class="section"><div class="container"><div class="section-title"><span class="section-tag">Our Divisions</span><h2>Three Pillars of Excellence</h2><p>From consulting to financial advisory to digital solutions</p></div><div class="card-grid"><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#1a237e,#3949ab)"><i class="fas fa-handshake"></i></div><h3>The Consulting Crew</h3><p>Business registration, GST, compliance, FSSAI, MSME, trademark, ISO certification and complete regulatory support for businesses.</p></div><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#ff6f00,#ffa726)"><i class="fas fa-piggy-bank"></i></div><h3>Paise Ki Pathshala</h3><p>Financial literacy, investment advisory, SIP planning, mutual funds, insurance, tax-saving strategies and wealth management.</p></div><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#10b981,#34d399)"><i class="fas fa-laptop-code"></i></div><h3>TCC Digital Hub</h3><p>Website development, app creation, AI chatbots, CRM setup, digital marketing and technology solutions for modern businesses.</p></div></div></div></section>
-<!-- Home Trust -->
-<section class="section" style="background:var(--white)"><div class="container"><div class="section-title"><span class="section-tag">Why Choose Us</span><h2>Trusted by Businesses Across India</h2></div><div class="card-grid" style="grid-template-columns:repeat(4,1fr)"><div style="text-align:center;padding:20px"><i class="fas fa-shield-halved" style="font-size:2.5rem;color:var(--primary);margin-bottom:12px"></i><h4>100% Secure</h4><p style="font-size:.82rem;color:var(--gray)">Bank-grade data protection</p></div><div style="text-align:center;padding:20px"><i class="fas fa-clock" style="font-size:2.5rem;color:var(--accent);margin-bottom:12px"></i><h4>Quick Turnaround</h4><p style="font-size:.82rem;color:var(--gray)">Fast processing guaranteed</p></div><div style="text-align:center;padding:20px"><i class="fas fa-headset" style="font-size:2.5rem;color:var(--success);margin-bottom:12px"></i><h4>Expert Support</h4><p style="font-size:.82rem;color:var(--gray)">Dedicated relationship manager</p></div><div style="text-align:center;padding:20px"><i class="fas fa-indian-rupee-sign" style="font-size:2.5rem;color:var(--primary-light);margin-bottom:12px"></i><h4>Affordable Plans</h4><p style="font-size:.82rem;color:var(--gray)">Starting at just Rs 499</p></div></div></div></section>
-</div>
-<!-- PRODUCTS PAGE -->
-<div class="page" id="page-products"><section class="section"><div class="container"><div class="section-title"><span class="section-tag">Products & Services</span><h2>Everything You Need for Financial Success</h2><p>Comprehensive suite of tax, compliance, investment and business solutions</p></div><div class="products-grid"><div class="product-card"><i class="fas fa-file-invoice-dollar"></i><h4>ITR Filing</h4><p>Income tax return filing for salaried, business & professionals</p></div><div class="product-card"><i class="fas fa-receipt"></i><h4>GST Registration & Filing</h4><p>Complete GST compliance including returns, amendments & cancellation</p></div><div class="product-card"><i class="fas fa-building-columns"></i><h4>Company Registration</h4><p>Pvt Ltd, LLP, OPC, partnership and sole proprietorship setup</p></div><div class="product-card"><i class="fas fa-trademark"></i><h4>Trademark & IP</h4><p>Brand protection with trademark registration and IP rights</p></div><div class="product-card"><i class="fas fa-file-contract"></i><h4>ROC Compliance</h4><p>Annual filings, director KYC, charge creation for companies</p></div><div class="product-card"><i class="fas fa-chart-pie"></i><h4>TDS Returns</h4><p>Quarterly TDS filing, correction returns and compliance</p></div><div class="product-card"><i class="fas fa-utensils"></i><h4>FSSAI License</h4><p>Food safety registration and licensing for food businesses</p></div><div class="product-card"><i class="fas fa-industry"></i><h4>MSME / Udyam</h4><p>Udyam registration and MSME certification for small businesses</p></div><div class="product-card"><i class="fas fa-certificate"></i><h4>ISO Certification</h4><p>Quality management certification for business credibility</p></div><div class="product-card"><i class="fas fa-chart-line"></i><h4>Mutual Funds & SIP</h4><p>Expert-guided investment in mutual funds and systematic plans</p></div><div class="product-card"><i class="fas fa-umbrella"></i><h4>Insurance Advisory</h4><p>Life, health, term and general insurance planning</p></div><div class="product-card"><i class="fas fa-piggy-bank"></i><h4>Tax Planning</h4><p>Strategic tax saving under 80C, 80D, NPS and more</p></div></div></div></section></div>
-<!-- SOLUTIONS PAGE -->
-<div class="page" id="page-solutions"><section class="section"><div class="container"><div class="section-title"><span class="section-tag">Solutions</span><h2>Tailored for Every Need</h2><p>Whether you are a salaried individual, freelancer, startup or enterprise</p></div><div class="card-grid"><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)"><i class="fas fa-user-tie"></i></div><h3>For Salaried Individuals</h3><p>ITR-1 filing, HRA optimization, 80C planning, salary restructuring, health insurance, NPS benefits and tax refund claims.</p></div><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)"><i class="fas fa-laptop"></i></div><h3>For Freelancers & Consultants</h3><p>ITR-3/4 filing, presumptive taxation, GST registration, advance tax planning, professional tax and invoicing setup.</p></div><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#10b981,#34d399)"><i class="fas fa-rocket"></i></div><h3>For Startups</h3><p>Company incorporation, DPIIT recognition, seed fund applications, compliance calendar, ESOP structuring and fundraising support.</p></div><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#ef4444,#f87171)"><i class="fas fa-store"></i></div><h3>For Small Businesses & MSMEs</h3><p>GST returns, Udyam registration, FSSAI, trade license, bookkeeping, payroll management and annual compliance.</p></div><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#1a237e,#3949ab)"><i class="fas fa-building"></i></div><h3>For Corporates & Enterprises</h3><p>ROC compliance, board resolutions, statutory audits, transfer pricing, FEMA compliance and corporate restructuring.</p></div><div class="card"><div class="card-icon" style="background:linear-gradient(135deg,#ec4899,#f472b6)"><i class="fas fa-users"></i></div><h3>For NRIs</h3><p>NRI tax filing, DTAA benefits, repatriation guidance, property tax in India, NRE/NRO account advisory and FEMA compliance.</p></div></div></div></section></div>
-<!-- CALCULATORS PAGE -->
-<div class="page" id="page-calculators"><section class="section"><div class="container"><div class="section-title"><span class="section-tag">Free Tools</span><h2>Financial Calculators</h2><p>Plan your finances with our free, instant calculators</p></div><div class="tabs"><button class="tab-btn active" onclick="showCalc('sip')">SIP</button><button class="tab-btn" onclick="showCalc('emi')">EMI</button><button class="tab-btn" onclick="showCalc('fd')">FD</button><button class="tab-btn" onclick="showCalc('gst')">GST</button><button class="tab-btn" onclick="showCalc('hra')">HRA</button><button class="tab-btn" onclick="showCalc('tax')">Income Tax</button><button class="tab-btn" onclick="showCalc('rd')">RD</button><button class="tab-btn" onclick="showCalc('ppf')">PPF</button></div>
-<!-- SIP Calculator -->
-<div class="tab-content active" id="calc-sip"><div class="calc-container"><h3><i class="fas fa-chart-line"></i> SIP Calculator</h3><label>Monthly Investment (Rs)</label><input type="number" id="sipAmt" value="5000"><label>Expected Annual Return (%)</label><input type="number" id="sipRate" value="12"><label>Investment Period (Years)</label><input type="number" id="sipYears" value="10"><button class="calc-btn" onclick="calcSIP()">Calculate Returns</button><div class="calc-result" id="sipResult"></div></div></div>
-<!-- EMI Calculator -->
-<div class="tab-content" id="calc-emi"><div class="calc-container"><h3><i class="fas fa-home"></i> EMI Calculator</h3><label>Loan Amount (Rs)</label><input type="number" id="emiLoan" value="1000000"><label>Interest Rate (% per annum)</label><input type="number" id="emiRate" value="8.5"><label>Loan Tenure (Years)</label><input type="number" id="emiYears" value="20"><button class="calc-btn" onclick="calcEMI()">Calculate EMI</button><div class="calc-result" id="emiResult"></div></div></div>
-<!-- FD Calculator -->
-<div class="tab-content" id="calc-fd"><div class="calc-container"><h3><i class="fas fa-piggy-bank"></i> FD Calculator</h3><label>Principal Amount (Rs)</label><input type="number" id="fdPrincipal" value="100000"><label>Interest Rate (% per annum)</label><input type="number" id="fdRate" value="7"><label>Tenure (Years)</label><input type="number" id="fdYears" value="5"><button class="calc-btn" onclick="calcFD()">Calculate Maturity</button><div class="calc-result" id="fdResult"></div></div></div>
-<!-- GST Calculator -->
-<div class="tab-content" id="calc-gst"><div class="calc-container"><h3><i class="fas fa-percent"></i> GST Calculator</h3><label>Amount (Rs)</label><input type="number" id="gstAmt" value="10000"><label>GST Rate (%)</label><select id="gstRate"><option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option></select><button class="calc-btn" onclick="calcGST()">Calculate GST</button><div class="calc-result" id="gstResult"></div></div></div>
-<!-- HRA Calculator -->
-<div class="tab-content" id="calc-hra"><div class="calc-container"><h3><i class="fas fa-house"></i> HRA Exemption Calculator</h3><label>Basic Salary (Rs/month)</label><input type="number" id="hraBasic" value="40000"><label>DA (Rs/month)</label><input type="number" id="hraDa" value="5000"><label>HRA Received (Rs/month)</label><input type="number" id="hraReceived" value="20000"><label>Rent Paid (Rs/month)</label><input type="number" id="hraRent" value="15000"><label>City</label><select id="hraCity"><option value="metro">Metro (Delhi/Mumbai/Kolkata/Chennai)</option><option value="non-metro">Non-Metro</option></select><button class="calc-btn" onclick="calcHRA()">Calculate Exemption</button><div class="calc-result" id="hraResult"></div></div></div>
-<!-- Income Tax Calculator -->
-<div class="tab-content" id="calc-tax"><div class="calc-container"><h3><i class="fas fa-file-invoice-dollar"></i> Income Tax Calculator (New Regime FY 2025-26)</h3><label>Annual Gross Income (Rs)</label><input type="number" id="taxIncome" value="1000000"><label>Standard Deduction (Rs)</label><input type="number" id="taxStdDed" value="75000"><button class="calc-btn" onclick="calcTax()">Calculate Tax</button><div class="calc-result" id="taxResult"></div></div></div>
-<!-- RD Calculator -->
-<div class="tab-content" id="calc-rd"><div class="calc-container"><h3><i class="fas fa-coins"></i> RD Calculator</h3><label>Monthly Deposit (Rs)</label><input type="number" id="rdAmt" value="5000"><label>Interest Rate (% per annum)</label><input type="number" id="rdRate" value="7"><label>Tenure (Years)</label><input type="number" id="rdYears" value="5"><button class="calc-btn" onclick="calcRD()">Calculate Maturity</button><div class="calc-result" id="rdResult"></div></div></div>
-<!-- PPF Calculator -->
-<div class="tab-content" id="calc-ppf"><div class="calc-container"><h3><i class="fas fa-vault"></i> PPF Calculator</h3><label>Annual Investment (Rs)</label><input type="number" id="ppfAmt" value="150000"><label>Current PPF Rate (%)</label><input type="number" id="ppfRate" value="7.1"><label>Tenure (Years)</label><input type="number" id="ppfYears" value="15"><button class="calc-btn" onclick="calcPPF()">Calculate Maturity</button><div class="calc-result" id="ppfResult"></div></div></div>
-</div></section></div>
-<!-- BLOG PAGE -->
-<div class="page" id="page-blog"><section class="section"><div class="container"><div class="section-title"><span class="section-tag">Resources & Blog</span><h2>Learn, Grow & Stay Updated</h2><p>Expert articles on tax, compliance, investments and financial planning</p></div><div class="blog-grid"><div class="blog-card"><div class="blog-card-img"><i class="fas fa-file-invoice"></i></div><div class="blog-card-body"><span class="blog-tag">Tax Guide</span><h4>Complete Guide to ITR Filing for Salaried Employees 2025-26</h4><p>Step-by-step process to file your income tax return online with all deductions.</p><a href="#" style="color:var(--primary);font-size:.85rem;font-weight:600">Read More &rarr;</a></div></div><div class="blog-card"><div class="blog-card-img" style="background:linear-gradient(135deg,#ff6f00,#ffa726)"><i class="fas fa-receipt"></i></div><div class="blog-card-body"><span class="blog-tag">GST</span><h4>GST Registration Process: Documents, Eligibility & Timeline</h4><p>Everything you need to know about getting your GST number in India.</p><a href="#" style="color:var(--primary);font-size:.85rem;font-weight:600">Read More &rarr;</a></div></div><div class="blog-card"><div class="blog-card-img" style="background:linear-gradient(135deg,#10b981,#34d399)"><i class="fas fa-chart-line"></i></div><div class="blog-card-body"><span class="blog-tag">Investment</span><h4>SIP vs Lumpsum: Which Investment Strategy is Better for You?</h4><p>Compare systematic and one-time investment approaches for wealth creation.</p><a href="#" style="color:var(--primary);font-size:.85rem;font-weight:600">Read More &rarr;</a></div></div><div class="blog-card"><div class="blog-card-img" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)"><i class="fas fa-building"></i></div><div class="blog-card-body"><span class="blog-tag">Business</span><h4>Pvt Ltd vs LLP vs OPC: Choosing the Right Business Structure</h4><p>Detailed comparison of company types for new entrepreneurs in India.</p><a href="#" style="color:var(--primary);font-size:.85rem;font-weight:600">Read More &rarr;</a></div></div><div class="blog-card"><div class="blog-card-img" style="background:linear-gradient(135deg,#ef4444,#f87171)"><i class="fas fa-piggy-bank"></i></div><div class="blog-card-body"><span class="blog-tag">Tax Saving</span><h4>Top 10 Tax Saving Options Under Section 80C for FY 2025-26</h4><p>Maximize your tax deductions with these proven investment instruments.</p><a href="#" style="color:var(--primary);font-size:.85rem;font-weight:600">Read More &rarr;</a></div></div><div class="blog-card"><div class="blog-card-img" style="background:linear-gradient(135deg,#ec4899,#f472b6)"><i class="fas fa-scale-balanced"></i></div><div class="blog-card-body"><span class="blog-tag">Compliance</span><h4>Annual Compliance Checklist for Private Limited Companies</h4><p>Essential ROC filings, board meetings and statutory requirements.</p><a href="#" style="color:var(--primary);font-size:.85rem;font-weight:600">Read More &rarr;</a></div></div></div></div></section></div>
-<!-- COMPANY PAGE -->
-<div class="page" id="page-company"><section class="section"><div class="container"><div class="section-title"><span class="section-tag">About Us</span><h2>Paise Ki Pathshala Private Limited</h2><p>A venture by The Consulting Crew, empowering India with financial literacy since 2019</p></div><div class="card-grid" style="grid-template-columns:1fr 1fr"><div class="card"><h3><i class="fas fa-bullseye" style="color:var(--primary);margin-right:8px"></i>Our Mission</h3><p>To democratize financial knowledge and make professional compliance, tax and investment services accessible to every Indian individual and business, regardless of size or complexity.</p></div><div class="card"><h3><i class="fas fa-eye" style="color:var(--accent);margin-right:8px"></i>Our Vision</h3><p>To become India's most trusted financial education and compliance ecosystem, enabling millions to EDUCATE themselves, INVEST wisely, and GROW their wealth sustainably.</p></div></div><div style="margin-top:40px"><div class="card"><h3>Company Details</h3><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px"><div><p style="font-size:.82rem;color:var(--gray)"><strong>Legal Name:</strong> PAISE KI PATHSHALA PRIVATE LIMITED</p><p style="font-size:.82rem;color:var(--gray);margin-top:8px"><strong>CIN:</strong> U69200RJ2026PTC111856</p><p style="font-size:.82rem;color:var(--gray);margin-top:8px"><strong>PAN:</strong> ABJCP7313N</p><p style="font-size:.82rem;color:var(--gray);margin-top:8px"><strong>GSTIN:</strong> 08ABJCP7313N1ZD</p></div><div><p style="font-size:.82rem;color:var(--gray)"><strong>Registered Office:</strong> C-71, Hastinapur, Vaishali Nagar, Jaipur, Rajasthan 302021</p><p style="font-size:.82rem;color:var(--gray);margin-top:8px"><strong>Email:</strong> info@consultingcrew.in</p><p style="font-size:.82rem;color:var(--gray);margin-top:8px"><strong>Phone:</strong> +91 93521 15498</p><p style="font-size:.82rem;color:var(--gray);margin-top:8px"><strong>Website:</strong> consultingcrew.in</p></div></div></div></div></div></section></div>
-<!-- CONTACT PAGE -->
-<div class="page" id="page-contact"><section class="section"><div class="container"><div class="section-title"><span class="section-tag">Get In Touch</span><h2>Contact Us Today</h2><p>We are here to help with all your financial and compliance needs</p></div><div class="contact-grid"><div class="contact-form"><h3 style="margin-bottom:20px">Send Us a Message</h3><input type="text" placeholder="Your Full Name"><input type="email" placeholder="Email Address"><input type="tel" placeholder="Phone Number"><select><option>Select Service</option><option>ITR Filing</option><option>GST Registration</option><option>Company Registration</option><option>Investment Advisory</option><option>Tax Planning</option><option>Other</option></select><textarea placeholder="Your Message"></textarea><button class="btn btn-primary" style="width:100%">Send Message</button></div><div><div class="contact-info-card"><i class="fas fa-map-marker-alt"></i><div><h4 style="font-size:.95rem">Office Address</h4><p style="font-size:.82rem;color:var(--gray)">C-71, Hastinapur, Vaishali Nagar, Jaipur, Rajasthan 302021</p></div></div><div class="contact-info-card"><i class="fas fa-phone"></i><div><h4 style="font-size:.95rem">Phone</h4><p style="font-size:.82rem;color:var(--gray)">+91 93521 15498</p></div></div><div class="contact-info-card"><i class="fas fa-envelope"></i><div><h4 style="font-size:.95rem">Email</h4><p style="font-size:.82rem;color:var(--gray)">info@consultingcrew.in</p></div></div><div class="contact-info-card"><i class="fab fa-whatsapp" style="color:#25d366"></i><div><h4 style="font-size:.95rem">WhatsApp</h4><p style="font-size:.82rem;color:var(--gray)"><a href="https://wa.me/919352115498" target="_blank" style="color:var(--primary)">Chat with us now</a></p></div></div><div class="contact-info-card"><i class="fas fa-clock"></i><div><h4 style="font-size:.95rem">Working Hours</h4><p style="font-size:.82rem;color:var(--gray)">Mon - Sat: 10:00 AM - 7:00 PM</p></div></div></div></div></div></section></div>
-<!-- FOOTER -->
-<footer class="footer"><div class="container"><div class="footer-grid"><div><a href="#" class="logo" onclick="showPage('home')" style="color:var(--white);margin-bottom:12px;display:inline-flex"><i class="fas fa-graduation-cap" style="color:var(--accent-light)"></i><div>Paise Ki Pathshala<span>EDUCATE - INVEST - GROW</span></div></a><p style="margin-top:12px">Your complete financial education, compliance and investment partner. A venture by The Consulting Crew.</p><div class="footer-socials" style="margin-top:16px"><a href="https://www.instagram.com/the_consulting_crew" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/profile.php?id=61575474518868" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://www.linkedin.com/company/the-consulting-crew-jaipur/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://x.com/tcc_jaipur" target="_blank"><i class="fab fa-x-twitter"></i></a></div></div><div><h4>Products</h4><a href="#" onclick="showPage('products')">ITR Filing</a><br><a href="#" onclick="showPage('products')">GST Services</a><br><a href="#" onclick="showPage('products')">Company Registration</a><br><a href="#" onclick="showPage('products')">Trademark</a><br><a href="#" onclick="showPage('products')">Investment Advisory</a></div><div><h4>Resources</h4><a href="#" onclick="showPage('blog')">Tax Guides</a><br><a href="#" onclick="showPage('blog')">GST Articles</a><br><a href="#" onclick="showPage('calculators')">Calculators</a><br><a href="#" onclick="showPage('blog')">Compliance Tips</a><br><a href="https://consultingcrew.in/wp-content/uploads/2026/04/TCC-Compliance-Calendar-FY26-27-ENHANCED.xlsx" target="_blank">Compliance Calendar</a></div><div><h4>Company</h4><a href="#" onclick="showPage('company')">About Us</a><br><a href="#" onclick="showPage('contact')">Contact</a><br><a href="#">Privacy Policy</a><br><a href="#">Terms of Use</a><br><a href="#">Disclaimer</a></div></div><div class="footer-bottom"><p>2026 Paise Ki Pathshala Private Limited (CIN: U69200RJ2026PTC111856). All rights reserved.</p><p>Made with dedication in Jaipur, India</p></div></div></footer>
-<!-- JAVASCRIPT -->
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> CA-led finance platform · Made in Jaipur</span>
+        <h1>The numbers, <em>explained</em>. The CA, <em>on WhatsApp</em>.</h1>
+        <p class="lede">Free calculators for income tax, HRA, TDS, GST, MSME loan eligibility and the compliance calendar — backed by a practising CA team that reviews your numbers before you act.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary" onclick="showPage('calculators');return false"><i class="fas fa-calculator"></i> Open Calculator Hub</a>
+          <a href="https://wa.me/919352115498?text=I%20want%20a%20free%20CA%20review" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Free 15-min CA review</a>
+        </div>
+        <div class="hero-author">
+          <div class="avatar">AS</div>
+          <div class="meta">
+            <strong>CA Ashish Sharma</strong>
+            <span>Founder · The Consulting Crew &amp; Paise Ki Pathshala</span>
+            <div class="credentials">CA · 10+ yrs · GST · MSME · Investments</div>
+          </div>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div class="float-chip chip-1"><i class="fas fa-check-circle"></i> Old vs New regime: instant</div>
+        <div class="float-chip chip-2"><i class="fas fa-shield-halved"></i> Reviewed by a CA, not a bot</div>
+        <div class="hero-tool">
+          <div class="hero-tool-head">
+            <div>
+              <div class="badge">Flagship · FY 2025-26</div>
+              <h4>Old vs New Tax Regime</h4>
+            </div>
+            <div class="live"><span class="dot"></span> Live preview</div>
+          </div>
+          <div class="hero-tool-body">
+            <div class="hero-tool-row"><label>Salary income</label><span class="val">₹ 12,00,000</span></div>
+            <div class="hero-tool-row"><label>80C + 80D + NPS</label><span class="val">₹ 2,25,000</span></div>
+            <div class="hero-tool-row"><label>HRA exemption</label><span class="val">₹ 1,20,000</span></div>
+            <div class="hero-tool-compare">
+              <div class="compare-card"><div class="label">Old Regime</div><div class="amount">₹ 76,440</div></div>
+              <div class="compare-card winner"><div class="label">New Regime</div><div class="amount">₹ 71,500</div><span class="tag-win">Saves ₹4,940</span></div>
+            </div>
+          </div>
+          <div class="hero-tool-foot">
+            <span>Recompute with your exact figures &rarr;</span>
+            <a href="#" onclick="showPage('calculators');showCalc('regime');return false">Open calculator</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="trust-strip"><div class="container">
+  <div class="trust-grid">
+    <div class="trust-item"><strong>2,400<span class="plus">+</span></strong> filings &amp; reviews</div>
+    <div class="trust-item"><strong>10<span class="plus">+</span> yrs</strong> CA practice experience</div>
+    <div class="trust-item"><strong>9</strong> free calculators &amp; counting</div>
+    <div class="trust-item"><strong>4.9 / 5</strong> from MSME clients</div>
+  </div>
+</div></section>
+
+<!-- Calculator hub -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker"><span class="line"></span> Calculator hub</span>
+      <h2>Start with the number, end with a decision</h2>
+      <p>Each tool is built by a CA, computes against the latest FY 2025-26 slabs and rules, and finishes with a clear next action — not a marketing wall.</p>
+    </div>
+
+    <div class="calc-hub">
+      <a href="#" onclick="showPage('calculators');showCalc('regime');return false" class="calc-card flagship">
+        <span class="new">Flagship</span>
+        <div class="calc-head">
+          <div class="icon"><i class="fas fa-scale-balanced"></i></div>
+          <span class="tag">Most asked</span>
+        </div>
+        <h3>Old vs New Tax Regime — side-by-side</h3>
+        <p>Enter income, deductions and HRA once. We compute both regimes in parallel and tell you which saves more — with the math shown.</p>
+        <span class="open">Open calculator <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('hra');return false" class="calc-card">
+        <div class="calc-head"><div class="icon"><i class="fas fa-house"></i></div><span class="tag">Salaried</span></div>
+        <h3>HRA Exemption Calculator</h3>
+        <p>Metro vs non-metro, actual HRA, 10% of salary rule — exemption computed correctly with proof.</p>
+        <span class="open">Open <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('tds');return false" class="calc-card">
+        <div class="calc-head"><div class="icon"><i class="fas fa-percent"></i></div><span class="tag">Salary · Contract</span></div>
+        <h3>TDS on Salary Calculator</h3>
+        <p>Compute monthly TDS deduction, gross-to-net pay and CTC breakup for FY 2025-26 under both regimes.</p>
+        <span class="open">Open <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('gst');return false" class="calc-card">
+        <div class="calc-head"><div class="icon"><i class="fas fa-receipt"></i></div><span class="tag">Business</span></div>
+        <h3>GST Calculator</h3>
+        <p>Add or remove GST at 5/12/18/28%, with CGST/SGST split — for invoicing and quick price checks.</p>
+        <span class="open">Open <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('composition');return false" class="calc-card">
+        <span class="new">New</span>
+        <div class="calc-head"><div class="icon"><i class="fas fa-store"></i></div><span class="tag">MSME</span></div>
+        <h3>GST Composition vs Regular</h3>
+        <p>Turnover-aware decision tool. See net outgo, ITC trade-off and which scheme actually fits your trade.</p>
+        <span class="open">Open <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('msme');return false" class="calc-card flagship">
+        <span class="new">New</span>
+        <div class="calc-head"><div class="icon"><i class="fas fa-building-columns"></i></div><span class="tag">MSME</span></div>
+        <h3>MSME Loan Eligibility Checker</h3>
+        <p>One form, four schemes: Mudra, CGTMSE, PMEGP and Rajasthan RIPS — see which ones you actually qualify for, before the bank meeting.</p>
+        <span class="open">Check eligibility <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('sip');return false" class="calc-card">
+        <div class="calc-head"><div class="icon"><i class="fas fa-chart-line"></i></div><span class="tag">Investor</span></div>
+        <h3>SIP &amp; Lumpsum Returns</h3>
+        <p>Project mutual-fund growth, compare SIP vs lumpsum, and see wealth gained net of inflation.</p>
+        <span class="open">Open <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('emi');return false" class="calc-card">
+        <div class="calc-head"><div class="icon"><i class="fas fa-coins"></i></div><span class="tag">Lifestyle</span></div>
+        <h3>EMI &amp; Loan Calculator</h3>
+        <p>Monthly EMI, total interest, and amortization for home, vehicle or business loans.</p>
+        <span class="open">Open <i class="fas fa-arrow-right"></i></span>
+      </a>
+
+      <a href="#" onclick="showPage('calculators');showCalc('calendar');return false" class="calc-card">
+        <span class="new">Pro</span>
+        <div class="calc-head"><div class="icon"><i class="fas fa-calendar-days"></i></div><span class="tag">Business</span></div>
+        <h3>Compliance Calendar Lookup</h3>
+        <p>Pick a month — see every GST, TDS, ROC and Income Tax deadline. Get WhatsApp reminders before each one.</p>
+        <span class="open">Open <i class="fas fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Flagship Old vs New live -->
+<section class="flagship-section" id="flagship-anchor">
+  <div class="container">
+    <div class="flagship-grid">
+      <div>
+        <span class="kicker"><span class="line" style="background:var(--accent-2)"></span> Flagship tool</span>
+        <h2>Old vs New Tax Regime, settled in 30 seconds.</h2>
+        <p class="lede">Every salaried person re-asks this in March. We removed the guesswork — punch in your numbers and watch both regimes resolve side-by-side, with the deduction math visible.</p>
+        <ul class="flagship-bullets">
+          <li><i class="fas fa-check"></i> Latest FY 2025-26 slabs &amp; ₹75,000 standard deduction in New Regime</li>
+          <li><i class="fas fa-check"></i> Section 87A rebate, surcharge and 4% cess auto-applied</li>
+          <li><i class="fas fa-check"></i> See exact ₹ saved — and which deductions move the needle</li>
+          <li><i class="fas fa-check"></i> Free CA review on WhatsApp before you act</li>
+        </ul>
+        <a href="https://wa.me/919352115498?text=Please%20review%20my%20Old%20vs%20New%20regime%20decision" target="_blank" class="btn btn-accent"><i class="fab fa-whatsapp"></i> Get a 15-min CA review</a>
+      </div>
+
+      <div class="calc-shell">
+        <h4>Old vs New Regime Calculator <span class="reg">FY 2025-26</span></h4>
+        <div class="calc-row">
+          <div class="calc-field"><label>Gross Annual Income (₹)</label><input type="number" id="hRegIncome" value="1200000"></div>
+          <div class="calc-field"><label>Age</label><select id="hRegAge"><option value="below60">Below 60</option><option value="60to80">60 to 80 (Senior)</option><option value="above80">80+ (Super Senior)</option></select></div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-field"><label>80C — PPF, ELSS, LIC (₹)</label><input type="number" id="hReg80c" value="150000"></div>
+          <div class="calc-field"><label>80D — Health Insurance (₹)</label><input type="number" id="hReg80d" value="25000"></div>
+        </div>
+        <div class="calc-row">
+          <div class="calc-field"><label>NPS 80CCD(1B) (₹)</label><input type="number" id="hRegNps" value="50000"></div>
+          <div class="calc-field"><label>HRA Exemption (₹)</label><input type="number" id="hRegHra" value="120000"></div>
+        </div>
+        <button class="calc-cta" onclick="calcHomeRegime()">Compare both regimes</button>
+        <div class="calc-output" id="hRegResult"></div>
+        <p class="calc-disclaimer">Estimates only. We will hand-check your figures on the WhatsApp call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Learning Tracks -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker"><span class="line"></span> Learning tracks</span>
+      <h2>Practitioner-grade learning, structured by who you are</h2>
+      <p>Not a generic blog wall. Four tracks designed by a CA, sequenced so each lesson unlocks the next decision.</p>
+    </div>
+
+    <div class="tracks-grid">
+      <a href="#" onclick="showPage('tracks');return false" class="track track-1">
+        <div class="track-head">
+          <span class="track-num">Track 01</span>
+          <div class="for">For salaried</div>
+          <h3>Salaried Mastery</h3>
+        </div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> Pick the right regime, every March</li>
+            <li><i class="fas fa-circle-check"></i> HRA, LTA, NPS — squeeze every rupee</li>
+            <li><i class="fas fa-circle-check"></i> ITR-1 / ITR-2 without a CA fee</li>
+            <li><i class="fas fa-circle-check"></i> Notices, refunds &amp; defectives</li>
+          </ul>
+          <div class="track-meta"><span>9 lessons</span><span>~2 hr</span></div>
+          <span class="track-go">Start track <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <a href="#" onclick="showPage('tracks');return false" class="track track-2">
+        <div class="track-head">
+          <span class="track-num">Track 02</span>
+          <div class="for">For MSMEs</div>
+          <h3>Business &amp; MSME</h3>
+        </div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> GST: Composition vs Regular decision</li>
+            <li><i class="fas fa-circle-check"></i> Udyam, MSME schemes &amp; subsidies</li>
+            <li><i class="fas fa-circle-check"></i> Mudra, CGTMSE, PMEGP loans</li>
+            <li><i class="fas fa-circle-check"></i> Compliance calendar that actually fires</li>
+          </ul>
+          <div class="track-meta"><span>11 lessons</span><span>~3 hr</span></div>
+          <span class="track-go">Start track <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <a href="#" onclick="showPage('tracks');return false" class="track track-3">
+        <div class="track-head">
+          <span class="track-num">Track 03</span>
+          <div class="for">For investors</div>
+          <h3>Investor Path</h3>
+        </div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> SIP vs lumpsum vs STP</li>
+            <li><i class="fas fa-circle-check"></i> Index funds, ELSS &amp; debt allocation</li>
+            <li><i class="fas fa-circle-check"></i> Capital gains: STCG, LTCG &amp; grandfathering</li>
+            <li><i class="fas fa-circle-check"></i> Tax-efficient portfolio rebalancing</li>
+          </ul>
+          <div class="track-meta"><span>8 lessons</span><span>~2 hr</span></div>
+          <span class="track-go">Start track <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <a href="#" onclick="showPage('tracks');return false" class="track track-4">
+        <div class="track-head">
+          <span class="track-num">Track 04</span>
+          <div class="for">For CA pros</div>
+          <h3>CA-Pro Deep Dives</h3>
+        </div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> GST notices: SCN, ASMT-10, DRC-01</li>
+            <li><i class="fas fa-circle-check"></i> Faceless assessments playbook</li>
+            <li><i class="fas fa-circle-check"></i> Transfer pricing &amp; FEMA snapshots</li>
+            <li><i class="fas fa-circle-check"></i> Article + audit field notes</li>
+          </ul>
+          <div class="track-meta"><span>12 lessons</span><span>~5 hr</span></div>
+          <span class="track-go">Start track <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Author / Trust block -->
+<section class="section">
+  <div class="container">
+    <div class="author-block">
+      <div class="author-card">
+        <span class="quote-mark">&ldquo;</span>
+        <div class="author-avatar">AS</div>
+        <h3>CA Ashish Sharma</h3>
+        <div class="role">Founder · Practising CA · Jaipur</div>
+        <p class="bio">I built Paise Ki Pathshala because India keeps Googling tax math at 11pm and ends up with the wrong answer. Every calculator here is what I'd run on my own laptop for a real client — and if your numbers are unusual, we'll review them together on WhatsApp.</p>
+        <div class="creds">
+          <span>Chartered Accountant</span>
+          <span>ICAI Member</span>
+          <span>10+ yrs practice</span>
+          <span>GST · ITR · MSME</span>
+          <span>Rajasthan MSME focus</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="kicker"><span class="line"></span> Why CA-led</span>
+        <h2>Built like a CA office, priced like a free tool.</h2>
+        <ul class="author-points" style="margin-top:24px">
+          <li>
+            <span class="pnum">01</span>
+            <div><h4>Every calculator is checked against ICAI handbooks</h4><p>Slabs, surcharge, cess, 87A rebate, standard deduction — updated each Union Budget, not scraped from third-party blogs.</p></div>
+          </li>
+          <li>
+            <span class="pnum">02</span>
+            <div><h4>Results end in an action, not a paywall</h4><p>Every tool finishes with what to file, what to claim, or when to escalate — and a free WhatsApp door if you need a human.</p></div>
+          </li>
+          <li>
+            <span class="pnum">03</span>
+            <div><h4>Tax + investing + MSME, in one place</h4><p>ClearTax has tax. Groww has investing. Neither understands a Jaipur trader. We do all three, with a CA reviewing the edge cases.</p></div>
+          </li>
+          <li>
+            <span class="pnum">04</span>
+            <div><h4>No spam, no data resold</h4><p>Calculators run in your browser. We collect details only if you ask us to review.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ask CA Ashish -->
+<section class="qa-section">
+  <div class="container">
+    <div class="qa-grid">
+      <div class="qa-promo">
+        <span class="kicker"><span class="line"></span> Ask CA Ashish</span>
+        <h2>The question you'd Whatsapp your CA cousin at 11pm</h2>
+        <p>Send it. Real answer, from a real CA, usually within a business day. Top questions get added to this public archive (anonymised).</p>
+        <div class="qa-cta-row">
+          <a href="https://wa.me/919352115498?text=Hi%20CA%20Ashish%2C%20I%20have%20a%20question" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
+          <a href="#" onclick="showPage('contact');return false" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Submit via form</a>
+        </div>
+        <div class="qa-stat"><i class="fas fa-comments"></i><div><strong>180+</strong><span>questions answered</span></div></div>
+        <div class="qa-stat"><i class="fas fa-clock"></i><div><strong>~6 hr</strong><span>median response</span></div></div>
+        <div class="qa-stat"><i class="fas fa-user-graduate"></i><div><strong>Free</strong><span>for first-time visitors</span></div></div>
+      </div>
+
+      <div class="qa-list">
+        <div class="qa-item open" onclick="toggleQ(this)">
+          <div class="qa-q"><div class="qmeta"><span class="qcat">Regime</span><span class="qtext">My CTC is ₹14L and I claim ₹2.5L in 80C+NPS+80D. Which regime saves more?</span></div><div class="qtoggle"><i class="fas fa-chevron-down"></i></div></div>
+          <div class="qa-a">In FY 2025-26 the new regime gives you ₹75,000 standard deduction and tighter slabs, while the old regime lets you claim 80C/80D/HRA. At ₹14L gross with ₹2.5L of deductions plus a likely HRA, the <strong>old regime is usually marginally cheaper by ₹6–18k</strong> — but it flips against you if you live in your own house or under-utilise 80C. Run our Old vs New calculator with your actual HRA and it'll show the rupee gap. <div class="byline"><strong>CA Ashish Sharma</strong> · Updated for FY 2025-26</div></div>
+        </div>
+
+        <div class="qa-item" onclick="toggleQ(this)">
+          <div class="qa-q"><div class="qmeta"><span class="qcat">GST</span><span class="qtext">I run a kirana doing ₹65L turnover. Composition or Regular GST?</span></div><div class="qtoggle"><i class="fas fa-chevron-down"></i></div></div>
+          <div class="qa-a">At ₹65L turnover you're eligible for Composition (1% for traders, threshold ₹1.5Cr). Composition wins if your customers don't need GST invoices and your inward ITC is small — most kiranas fit this. You lose if you sell B2B or buy a lot of taxable inputs. Use our Composition vs Regular calculator to see the net-outgo gap. <div class="byline"><strong>CA Ashish Sharma</strong> · 8 May 2026</div></div>
+        </div>
+
+        <div class="qa-item" onclick="toggleQ(this)">
+          <div class="qa-q"><div class="qmeta"><span class="qcat">MSME</span><span class="qtext">Can a 2-yr-old printing press in Jaipur get CGTMSE-backed loan?</span></div><div class="qtoggle"><i class="fas fa-chevron-down"></i></div></div>
+          <div class="qa-a">Yes. CGTMSE covers MSME units (Udyam-registered) for collateral-free loans up to ₹5Cr. A 2-year vintage with clean GST returns is well within eligibility — the bank needs Udyam, 3 yrs ITRs (or audited financials), GST returns and a project report. Try our MSME Loan Eligibility checker — it also flags Mudra and PMEGP if you qualify there too. <div class="byline"><strong>CA Ashish Sharma</strong> · MSME desk</div></div>
+        </div>
+
+        <div class="qa-item" onclick="toggleQ(this)">
+          <div class="qa-q"><div class="qmeta"><span class="qcat">HRA</span><span class="qtext">I pay rent to my mother — is the HRA exemption actually allowed?</span></div><div class="qtoggle"><i class="fas fa-chevron-down"></i></div></div>
+          <div class="qa-a">Yes, fully allowed — but the rent must be real. Keep a rent agreement, transfer via bank (not cash) and your mother declares the rental income in her ITR. If she's a senior citizen with no other income, her tax on that rent can be zero. The exemption isn't disallowed just because the landlord is family — it's disallowed if you can't prove it. <div class="byline"><strong>CA Ashish Sharma</strong> · Salaried desk</div></div>
+        </div>
+
+        <div class="qa-item" onclick="toggleQ(this)">
+          <div class="qa-q"><div class="qmeta"><span class="qcat">Capital gains</span><span class="qtext">Sold equity MF after 14 months. STCG or LTCG, and how much tax?</span></div><div class="qtoggle"><i class="fas fa-chevron-down"></i></div></div>
+          <div class="qa-a">Holding period for equity MF is 12 months for LTCG. At 14 months you're in LTCG territory — taxed at 12.5% (post Jul 2024 amendment) on gains <strong>above ₹1.25L per year</strong>. So if your gain is ₹2L, tax is 12.5% × ₹75k = ₹9,375 + cess. <div class="byline"><strong>CA Ashish Sharma</strong> · Investor desk</div></div>
+        </div>
+
+        <div class="qa-item" onclick="toggleQ(this)">
+          <div class="qa-q"><div class="qmeta"><span class="qcat">TDS</span><span class="qtext">My employer deducts TDS on my full salary even though I have heavy 80C — can I fix this?</span></div><div class="qtoggle"><i class="fas fa-chevron-down"></i></div></div>
+          <div class="qa-a">Yes — submit a fresh <strong>Form 12BB</strong> with your investment proofs to HR. They'll recompute TDS for the rest of the year and the deducted excess gets adjusted against future months. If the year ends with excess TDS, claim refund in your ITR. <div class="byline"><strong>CA Ashish Sharma</strong> · Salaried desk</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Compliance Calendar Preview -->
+<section class="cal-section">
+  <div class="container">
+    <div class="cal-grid">
+      <div>
+        <span class="kicker"><span class="line"></span> Compliance OS</span>
+        <h2>The deadline you almost missed — already in your WhatsApp.</h2>
+        <p style="color:var(--muted);margin:14px 0 22px;font-size:1.02rem">Every GST, TDS, ROC and Income Tax due date for the month, in one card. Subscribe and we'll WhatsApp you the day before each one.</p>
+        <a href="https://wa.me/919352115498?text=I%20want%20WhatsApp%20compliance%20reminders" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Get reminders on WhatsApp</a>
+        <a href="#" onclick="showPage('calculators');showCalc('calendar');return false" class="btn btn-ghost" style="margin-left:10px"><i class="fas fa-calendar-days"></i> Open full calendar</a>
+        <div style="margin-top:28px;padding:18px;background:#fff;border:1px solid var(--rule);border-radius:12px">
+          <strong style="display:block;margin-bottom:6px;font-family:'Fraunces',serif">What you actually get</strong>
+          <ul style="list-style:none;font-size:.88rem;color:var(--ink-2)">
+            <li style="padding:4px 0"><i class="fas fa-check" style="color:var(--green);margin-right:8px"></i> Day-before alert for every applicable filing</li>
+            <li style="padding:4px 0"><i class="fas fa-check" style="color:var(--green);margin-right:8px"></i> Late-fee &amp; penalty estimate if you miss it</li>
+            <li style="padding:4px 0"><i class="fas fa-check" style="color:var(--green);margin-right:8px"></i> One-tap CA help to file in time</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-list">
+        <div class="cal-head"><h4>May 2026 · Key deadlines</h4><span class="sel">Filter: All</span></div>
+        <div class="cal-row"><div class="cal-date"><div class="d">07</div><div class="m">May</div></div><div class="cal-info"><h5>TDS Payment — April 2026</h5><p>For all deductors. Form 26Q/24Q applicable.</p></div><span class="cal-pill tds">TDS</span></div>
+        <div class="cal-row"><div class="cal-date"><div class="d">11</div><div class="m">May</div></div><div class="cal-info"><h5>GSTR-1 — April 2026</h5><p>Monthly filers · turnover &gt; ₹5 Cr</p></div><span class="cal-pill gst">GST</span></div>
+        <div class="cal-row"><div class="cal-date"><div class="d">15</div><div class="m">May</div></div><div class="cal-info"><h5>Form 16 issuance — FY 2025-26</h5><p>Employers issue Form 16 to employees.</p></div><span class="cal-pill tds">TDS</span></div>
+        <div class="cal-row"><div class="cal-date"><div class="d">20</div><div class="m">May</div></div><div class="cal-info"><h5>GSTR-3B — April 2026</h5><p>Monthly filers · pay self-assessed tax.</p></div><span class="cal-pill gst">GST</span></div>
+        <div class="cal-row"><div class="cal-date"><div class="d">30</div><div class="m">May</div></div><div class="cal-info"><h5>Form 49C — Liaison offices</h5><p>Annual return for foreign companies' liaison offices.</p></div><span class="cal-pill roc">ROC</span></div>
+        <div class="cal-row"><div class="cal-date"><div class="d">31</div><div class="m">May</div></div><div class="cal-info"><h5>TDS Return Q4 — Form 24Q/26Q</h5><p>Final quarter FY 2025-26 return.</p></div><span class="cal-pill tds">TDS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA stripe -->
+<section class="cta-stripe">
+  <div class="container">
+    <div class="cta-grid">
+      <div>
+        <span class="kicker" style="color:var(--accent-2)"><span class="line" style="background:var(--accent-2)"></span> Free CA review</span>
+        <h2>The calculator said X. A 15-minute CA call says <em style="color:var(--accent-2);font-style:italic">whether to act on it.</em></h2>
+        <p>Run the numbers here. Then bring them — or your screenshot — to a free WhatsApp call with CA Ashish. No upsell pressure, no sales pitch.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/919352115498?text=I%20want%20a%20free%2015-min%20CA%20review" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp CA Ashish</a>
+        <a href="#" onclick="showPage('contact');return false" class="btn btn-secondary" style="background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.18)"><i class="fas fa-paper-plane"></i> Send via form</a>
+        <a href="#" onclick="showPage('calculators');return false" class="btn btn-ghost" style="border-color:rgba(255,255,255,.18);color:#fff"><i class="fas fa-calculator"></i> Open calculator hub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /home -->
+
+<!-- ===== CALCULATORS PAGE ===== -->
+<div class="page" id="page-calculators"><section class="section">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:30px">
+      <span class="kicker"><span class="line"></span> Calculator suite</span>
+      <h2>All 9 calculators, one workbench.</h2>
+      <p>Pick any tool from the left. Each calculator is built &amp; reviewed by a CA, updated for FY 2025-26.</p>
+    </div>
+
+    <div class="calc-suite-grid">
+      <aside class="calc-side">
+        <h4>Choose a tool</h4>
+        <ul>
+          <li><a data-calc="regime" onclick="showCalc('regime')" class="active">Old vs New Regime <span class="badge">Flagship</span></a></li>
+          <li><a data-calc="hra" onclick="showCalc('hra')">HRA Exemption</a></li>
+          <li><a data-calc="tds" onclick="showCalc('tds')">TDS on Salary</a></li>
+          <li><a data-calc="gst" onclick="showCalc('gst')">GST</a></li>
+          <li><a data-calc="composition" onclick="showCalc('composition')">GST Composition vs Regular <span class="badge">New</span></a></li>
+          <li><a data-calc="msme" onclick="showCalc('msme')">MSME Loan Eligibility <span class="badge">New</span></a></li>
+          <li><a data-calc="sip" onclick="showCalc('sip')">SIP &amp; Lumpsum</a></li>
+          <li><a data-calc="emi" onclick="showCalc('emi')">EMI</a></li>
+          <li><a data-calc="calendar" onclick="showCalc('calendar')">Compliance Calendar</a></li>
+        </ul>
+      </aside>
+
+      <div class="calc-main">
+
+        <!-- Old vs New Regime -->
+        <div class="calc-tool active" id="tool-regime">
+          <h2>Old vs New Tax Regime — FY 2025-26</h2>
+          <p class="lede">Enter your figures once. We compute both regimes in parallel, including 87A rebate, surcharge, cess and the ₹75,000 standard deduction in New Regime.</p>
+          <div class="field-grid">
+            <div class="field"><label>Gross annual income (₹)</label><input type="number" id="regIncome" value="1200000"></div>
+            <div class="field"><label>Age</label><select id="regAge"><option value="below60">Below 60</option><option value="60to80">60 to 80 (Senior)</option><option value="above80">80+ (Super Senior)</option></select></div>
+          </div>
+          <div class="field-grid three">
+            <div class="field"><label>80C (₹)</label><input type="number" id="reg80c" value="150000"></div>
+            <div class="field"><label>80D health (₹)</label><input type="number" id="reg80d" value="25000"></div>
+            <div class="field"><label>80CCD(1B) NPS (₹)</label><input type="number" id="regNps" value="50000"></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label>HRA exemption (₹)</label><input type="number" id="regHra" value="120000"></div>
+            <div class="field"><label>Other old-regime deductions (₹)</label><input type="number" id="regOther" value="0"></div>
+          </div>
+          <button class="btn btn-primary" onclick="calcRegime()" style="width:100%"><i class="fas fa-scale-balanced"></i> Compare both regimes</button>
+          <div class="result-box" id="regResult"></div>
+        </div>
+
+        <!-- HRA -->
+        <div class="calc-tool" id="tool-hra">
+          <h2>HRA Exemption Calculator</h2>
+          <p class="lede">Computes HRA exemption using the standard three-rule minimum — actual HRA, 50%/40% of (Basic + DA), and rent minus 10% of (Basic + DA).</p>
+          <div class="field-grid">
+            <div class="field"><label>Basic salary (₹/month)</label><input type="number" id="hraBasic" value="40000"></div>
+            <div class="field"><label>DA (₹/month)</label><input type="number" id="hraDa" value="0"></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label>HRA received (₹/month)</label><input type="number" id="hraReceived" value="20000"></div>
+            <div class="field"><label>Rent paid (₹/month)</label><input type="number" id="hraRent" value="18000"></div>
+          </div>
+          <div class="field">
+            <label>City</label>
+            <select id="hraCity"><option value="metro">Metro (Delhi / Mumbai / Kolkata / Chennai)</option><option value="non-metro">Non-Metro</option></select>
+          </div>
+          <button class="btn btn-primary" onclick="calcHRAfull()" style="width:100%"><i class="fas fa-house"></i> Calculate exemption</button>
+          <div class="result-box" id="hraResult"></div>
+        </div>
+
+        <!-- TDS -->
+        <div class="calc-tool" id="tool-tds">
+          <h2>TDS on Salary — FY 2025-26</h2>
+          <p class="lede">Computes monthly TDS deduction your employer should run, against the regime you've opted for. Section 192 logic with cess.</p>
+          <div class="field-grid">
+            <div class="field"><label>Gross annual salary (₹)</label><input type="number" id="tdsSal" value="1200000"></div>
+            <div class="field"><label>Regime opted</label><select id="tdsRegime"><option value="new">New (default)</option><option value="old">Old</option></select></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label>Old-regime deductions if any (₹)</label><input type="number" id="tdsDed" value="0"></div>
+            <div class="field"><label>Months remaining in FY</label><input type="number" id="tdsMonths" value="12"></div>
+          </div>
+          <button class="btn btn-primary" onclick="calcTDS()" style="width:100%"><i class="fas fa-percent"></i> Calculate TDS</button>
+          <div class="result-box" id="tdsResult"></div>
+        </div>
+
+        <!-- GST -->
+        <div class="calc-tool" id="tool-gst">
+          <h2>GST Calculator</h2>
+          <p class="lede">Add or remove GST at 5 / 12 / 18 / 28%, with CGST &amp; SGST split shown.</p>
+          <div class="field-grid">
+            <div class="field"><label>Amount (₹)</label><input type="number" id="gstAmount" value="10000"></div>
+            <div class="field"><label>GST rate</label><select id="gstRate"><option value="5">5%</option><option value="12">12%</option><option value="18" selected>18%</option><option value="28">28%</option></select></div>
+          </div>
+          <div class="field">
+            <label>Direction</label>
+            <select id="gstDir"><option value="add">Add GST (amount is exclusive)</option><option value="remove">Remove GST (amount is inclusive)</option></select>
+          </div>
+          <button class="btn btn-primary" onclick="calcGSTfull()" style="width:100%"><i class="fas fa-receipt"></i> Calculate GST</button>
+          <div class="result-box" id="gstResult"></div>
+        </div>
+
+        <!-- GST Composition vs Regular -->
+        <div class="calc-tool" id="tool-composition">
+          <h2>GST: Composition vs Regular</h2>
+          <p class="lede">Quick decision tool for traders, restaurants &amp; manufacturers. Compares net GST outgo under both schemes — including the ITC trade-off.</p>
+          <div class="field-grid">
+            <div class="field"><label>Annual turnover (₹)</label><input type="number" id="compTurnover" value="6000000"></div>
+            <div class="field"><label>Business type</label><select id="compType"><option value="trader">Trader / Manufacturer (1%)</option><option value="restaurant">Restaurant (5%)</option><option value="service">Service provider (6%)</option></select></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label>Expected output GST (Regular) (₹)</label><input type="number" id="compOutput" value="1080000"></div>
+            <div class="field"><label>Expected input ITC (Regular) (₹)</label><input type="number" id="compITC" value="650000"></div>
+          </div>
+          <button class="btn btn-primary" onclick="calcComposition()" style="width:100%"><i class="fas fa-store"></i> Compare both schemes</button>
+          <div class="result-box" id="compResult"></div>
+        </div>
+
+        <!-- MSME Loan Eligibility -->
+        <div class="calc-tool" id="tool-msme">
+          <h2>MSME Loan Eligibility Checker</h2>
+          <p class="lede">Tell us about your business once. We check four schemes — Mudra, CGTMSE, PMEGP and Rajasthan RIPS — and tell you which ones to actually pursue.</p>
+          <div class="field-grid">
+            <div class="field"><label>Annual turnover (₹)</label><input type="number" id="msmeTurnover" value="4500000"></div>
+            <div class="field"><label>Investment in plant &amp; machinery (₹)</label><input type="number" id="msmeInvestment" value="1500000"></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label>Loan amount needed (₹)</label><input type="number" id="msmeLoan" value="2500000"></div>
+            <div class="field"><label>Business vintage (years)</label><input type="number" id="msmeVintage" value="3"></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label>Udyam registered?</label><select id="msmeUdyam"><option value="yes">Yes</option><option value="no">No</option></select></div>
+            <div class="field"><label>State</label><select id="msmeState"><option value="rj">Rajasthan</option><option value="other">Other</option></select></div>
+          </div>
+          <button class="btn btn-primary" onclick="calcMSME()" style="width:100%"><i class="fas fa-building-columns"></i> Check eligibility</button>
+          <div class="result-box" id="msmeResult"></div>
+        </div>
+
+        <!-- SIP -->
+        <div class="calc-tool" id="tool-sip">
+          <h2>SIP &amp; Lumpsum Returns</h2>
+          <p class="lede">Project your mutual fund wealth from monthly SIP, lumpsum or both — with inflation-adjusted view.</p>
+          <div class="field-grid three">
+            <div class="field"><label>Monthly SIP (₹)</label><input type="number" id="sipMonthly" value="10000"></div>
+            <div class="field"><label>Lumpsum today (₹)</label><input type="number" id="sipLump" value="100000"></div>
+            <div class="field"><label>Period (years)</label><input type="number" id="sipYears" value="15"></div>
+          </div>
+          <div class="field-grid">
+            <div class="field"><label>Expected return (% p.a.)</label><input type="number" id="sipRate" value="12"></div>
+            <div class="field"><label>Inflation (% p.a.)</label><input type="number" id="sipInflation" value="6"></div>
+          </div>
+          <button class="btn btn-primary" onclick="calcSIPfull()" style="width:100%"><i class="fas fa-chart-line"></i> Project wealth</button>
+          <div class="result-box" id="sipResult"></div>
+        </div>
+
+        <!-- EMI -->
+        <div class="calc-tool" id="tool-emi">
+          <h2>EMI &amp; Loan Calculator</h2>
+          <p class="lede">Monthly EMI, total interest and amortization for home, vehicle or business loans.</p>
+          <div class="field-grid three">
+            <div class="field"><label>Loan amount (₹)</label><input type="number" id="emiLoan" value="2500000"></div>
+            <div class="field"><label>Interest rate (% p.a.)</label><input type="number" id="emiRate" value="9"></div>
+            <div class="field"><label>Tenure (years)</label><input type="number" id="emiYears" value="15"></div>
+          </div>
+          <button class="btn btn-primary" onclick="calcEMIfull()" style="width:100%"><i class="fas fa-coins"></i> Calculate EMI</button>
+          <div class="result-box" id="emiResult"></div>
+        </div>
+
+        <!-- Compliance Calendar -->
+        <div class="calc-tool" id="tool-calendar">
+          <h2>Compliance Calendar Lookup</h2>
+          <p class="lede">Pick a month and a business type. We list every GST, TDS, ROC and Income Tax deadline that applies — and offer WhatsApp reminders.</p>
+          <div class="field-grid">
+            <div class="field"><label>Month</label><select id="calMonth"></select></div>
+            <div class="field"><label>Business type</label><select id="calType"><option value="all">All</option><option value="gst">GST registered</option><option value="company">Company / ROC</option><option value="salaried">Salaried only</option></select></div>
+          </div>
+          <button class="btn btn-primary" onclick="calcCalendar()" style="width:100%"><i class="fas fa-calendar-days"></i> Show deadlines</button>
+          <div class="result-box" id="calResult"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- ===== LEARNING TRACKS PAGE ===== -->
+<div class="page" id="page-tracks"><section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker"><span class="line"></span> Learning tracks</span>
+      <h2>Four pathways. Sequenced lessons. Real outcomes.</h2>
+      <p>Each track unlocks a calculator + an article + a CA-reviewed checklist. Start anywhere — but stay till the end.</p>
+    </div>
+
+    <div class="tracks-grid">
+      <div class="track track-1">
+        <div class="track-head"><span class="track-num">Track 01</span><div class="for">For salaried</div><h3>Salaried Mastery</h3></div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> Lesson 1 — Old vs New regime decision</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 2 — HRA done right</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 3 — 80C + NPS + 80D stacking</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 4 — Form 12BB &amp; TDS reset</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 5 — Filing ITR-1 / ITR-2 yourself</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 6 — Responding to notices</li>
+          </ul>
+          <div class="track-meta"><span>9 lessons · ~2 hr</span><span>Free</span></div>
+          <a href="blog/income-tax-basics-salaried.html" class="track-go">Begin lesson 1 <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="track track-2">
+        <div class="track-head"><span class="track-num">Track 02</span><div class="for">For MSMEs</div><h3>Business &amp; MSME</h3></div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> Lesson 1 — Udyam registration walkthrough</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 2 — GST Composition vs Regular</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 3 — Filing GSTR-1 / 3B / 9</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 4 — Mudra, CGTMSE, PMEGP loans</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 5 — RIPS &amp; state subsidies</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 6 — Compliance calendar setup</li>
+          </ul>
+          <div class="track-meta"><span>11 lessons · ~3 hr</span><span>Free</span></div>
+          <a href="blog/gst-registration-guide.html" class="track-go">Begin lesson 1 <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="track track-3">
+        <div class="track-head"><span class="track-num">Track 03</span><div class="for">For investors</div><h3>Investor Path</h3></div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> Lesson 1 — Mutual fund basics</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 2 — SIP vs Lumpsum vs STP</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 3 — Index, ELSS, debt allocation</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 4 — STCG / LTCG &amp; new 12.5% slab</li>
+            <li><i class="fas fa-circle-check"></i> Lesson 5 — Rebalancing portfolio</li>
+          </ul>
+          <div class="track-meta"><span>8 lessons · ~2 hr</span><span>Free</span></div>
+          <a href="blog/mutual-funds-beginners-guide.html" class="track-go">Begin lesson 1 <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="track track-4">
+        <div class="track-head"><span class="track-num">Track 04</span><div class="for">For CA pros</div><h3>CA-Pro Deep Dives</h3></div>
+        <div class="track-body">
+          <ul>
+            <li><i class="fas fa-circle-check"></i> Notices: SCN, ASMT-10, DRC-01 workflow</li>
+            <li><i class="fas fa-circle-check"></i> Faceless assessment playbook</li>
+            <li><i class="fas fa-circle-check"></i> Transfer pricing primer</li>
+            <li><i class="fas fa-circle-check"></i> FEMA snapshots for NRIs</li>
+            <li><i class="fas fa-circle-check"></i> Audit field notes &amp; templates</li>
+          </ul>
+          <div class="track-meta"><span>12 lessons · ~5 hr</span><span>Premium</span></div>
+          <a href="https://wa.me/919352115498?text=I%20want%20access%20to%20CA-Pro%20track" target="_blank" class="track-go">Request access <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:50px;padding:34px;background:var(--paper-2);border-radius:18px;border:1px solid var(--rule);text-align:center">
+      <h3 style="margin-bottom:8px">Stuck on a lesson?</h3>
+      <p style="color:var(--muted);margin-bottom:18px">Every track has WhatsApp office hours with CA Ashish — no premium gate, no recording trap.</p>
+      <a href="https://wa.me/919352115498?text=I'm%20stuck%20on%20a%20track%20lesson" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
+    </div>
+  </div>
+</section></div>
+
+<!-- ===== ASK CA ASHISH PAGE ===== -->
+<div class="page" id="page-ask"><section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker"><span class="line"></span> Ask CA Ashish</span>
+      <h2>Real answers. From a real CA. Usually within a day.</h2>
+      <p>Send your question via WhatsApp or the form below. Top questions become public answers — anonymised — so the next person doesn't have to ask again.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:flex-start" class="qa-grid">
+      <div class="qa-promo">
+        <a href="https://wa.me/919352115498?text=Hi%20CA%20Ashish%2C%20I%20have%20a%20question" target="_blank" class="btn btn-wa" style="width:100%;justify-content:center;margin-bottom:14px"><i class="fab fa-whatsapp"></i> Ask on WhatsApp</a>
+        <a href="#" onclick="showPage('contact');return false" class="btn btn-secondary" style="width:100%;justify-content:center;margin-bottom:24px"><i class="fas fa-paper-plane"></i> Submit via form</a>
+        <div class="qa-stat"><i class="fas fa-comments"></i><div><strong>180+</strong><span>questions answered</span></div></div>
+        <div class="qa-stat"><i class="fas fa-clock"></i><div><strong>~6 hr</strong><span>median response time</span></div></div>
+        <div class="qa-stat"><i class="fas fa-user-graduate"></i><div><strong>Free</strong><span>for first-time visitors</span></div></div>
+        <div class="qa-stat"><i class="fas fa-shield-halved"></i><div><strong>Anonymous</strong><span>publishing on request</span></div></div>
+      </div>
+
+      <div>
+        <div style="margin-bottom:18px"><strong style="font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)">Filter by category</strong></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px" id="qaFilter">
+          <button class="btn btn-secondary" style="padding:6px 14px;font-size:.82rem" data-cat="all">All</button>
+          <button class="btn btn-secondary" style="padding:6px 14px;font-size:.82rem" data-cat="regime">Regime</button>
+          <button class="btn btn-secondary" style="padding:6px 14px;font-size:.82rem" data-cat="gst">GST</button>
+          <button class="btn btn-secondary" style="padding:6px 14px;font-size:.82rem" data-cat="msme">MSME</button>
+          <button class="btn btn-secondary" style="padding:6px 14px;font-size:.82rem" data-cat="hra">HRA</button>
+          <button class="btn btn-secondary" style="padding:6px 14px;font-size:.82rem" data-cat="capital">Capital gains</button>
+          <button class="btn btn-secondary" style="padding:6px 14px;font-size:.82rem" data-cat="tds">TDS</button>
+        </div>
+        <div class="qa-list" id="qaListFull"></div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- ===== BLOG PAGE ===== -->
+<div class="page" id="page-blog"><section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker"><span class="line"></span> Resources</span>
+      <h2>Articles &amp; guides, written by a CA</h2>
+      <p>Long-form explainers that pair each calculator with the decision behind it.</p>
+    </div>
+    <div class="res-grid">
+      <a href="blog/income-tax-basics-salaried.html" class="res-card"><div class="res-img"><i class="fas fa-file-invoice-dollar"></i></div><div class="res-body"><span class="res-tag">Income Tax</span><h4>Income Tax Basics for Salaried Employees</h4><p>Slabs, deductions, regime choice, ITR-1 vs ITR-2 — the salaried-person primer.</p><span class="read">Read article <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="blog/itr-filing-guide-2025-26.html" class="res-card"><div class="res-img gold"><i class="fas fa-file-alt"></i></div><div class="res-body"><span class="res-tag">ITR Guide</span><h4>ITR Filing Guide 2025-26</h4><p>Step-by-step, with screenshots — for first-time filers and seasoned ones.</p><span class="read">Read article <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="blog/gst-registration-guide.html" class="res-card"><div class="res-img green"><i class="fas fa-receipt"></i></div><div class="res-body"><span class="res-tag">GST</span><h4>GST Registration: Process &amp; Documents</h4><p>Thresholds, timeline, common rejections, and how to fix them.</p><span class="read">Read article <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="blog/mutual-funds-beginners-guide.html" class="res-card"><div class="res-img purple"><i class="fas fa-chart-line"></i></div><div class="res-body"><span class="res-tag">Investing</span><h4>Mutual Funds — A Beginner's Guide</h4><p>Equity vs debt, expense ratios, direct vs regular, taxation overview.</p><span class="read">Read article <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="blog/sip-vs-lumpsum-investment.html" class="res-card"><div class="res-img red"><i class="fas fa-coins"></i></div><div class="res-body"><span class="res-tag">SIP</span><h4>SIP vs Lumpsum — Which Wins?</h4><p>Math, behavior, and when a STP beats both.</p><span class="read">Read article <i class="fas fa-arrow-right"></i></span></div></a>
+      <a href="blog/" class="res-card"><div class="res-img dark"><i class="fas fa-book"></i></div><div class="res-body"><span class="res-tag">More</span><h4>Browse the full archive</h4><p>Every article, all tracks, search across topics.</p><span class="read">Open archive <i class="fas fa-arrow-right"></i></span></div></a>
+    </div>
+  </div>
+</section></div>
+
+<!-- ===== COMPANY PAGE ===== -->
+<div class="page" id="page-company"><section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker"><span class="line"></span> About</span>
+      <h2>A CA practice that decided India needed better calculators.</h2>
+      <p>Paise Ki Pathshala is a venture by The Consulting Crew — a Jaipur-based CA &amp; advisory firm. We build the tools we use in our own practice, then open them up.</p>
+    </div>
+
+    <div class="company-grid">
+      <div class="detail-card">
+        <h4>Mission</h4>
+        <p>Make professional-grade tax, investing and MSME finance accessible to every Indian — by combining calculators that don't lie with a CA who actually answers.</p>
+      </div>
+      <div class="detail-card">
+        <h4>Vision</h4>
+        <p>India's most trusted CA-led finance &amp; compliance platform — where every number a salaried, business owner, or investor encounters can be checked, explained, and acted on.</p>
+      </div>
+    </div>
+
+    <div class="detail-card" style="margin-top:24px">
+      <h4>Company details</h4>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+        <div>
+          <p><strong>Legal name:</strong> Paise Ki Pathshala Private Limited</p>
+          <p><strong>CIN:</strong> U69200RJ2026PTC111856</p>
+          <p><strong>PAN:</strong> ABJCP7313N</p>
+          <p><strong>GSTIN:</strong> 08ABJCP7313N1ZD</p>
+        </div>
+        <div>
+          <p><strong>Registered office:</strong> C-71, Hastinapur, Vaishali Nagar, Jaipur, Rajasthan 302021</p>
+          <p><strong>Email:</strong> info@consultingcrew.in</p>
+          <p><strong>Phone:</strong> +91 93521 15498</p>
+          <p><strong>Parent:</strong> The Consulting Crew</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div class="page" id="page-contact"><section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker"><span class="line"></span> Contact</span>
+      <h2>Bring the question. We'll bring the CA.</h2>
+      <p>WhatsApp is fastest. Form works too — usually answered the same business day.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-form">
+        <h3 style="margin-bottom:16px">Send a message</h3>
+        <input type="text" placeholder="Your full name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone / WhatsApp">
+        <select>
+          <option>What's this about?</option>
+          <option>Old vs New regime review</option>
+          <option>ITR filing help</option>
+          <option>GST / MSME query</option>
+          <option>Compliance calendar setup</option>
+          <option>MSME loan eligibility</option>
+          <option>Learning tracks / CA-Pro</option>
+          <option>Other</option>
+        </select>
+        <textarea placeholder="Your question or situation — be as specific as you can"></textarea>
+        <button class="btn btn-primary" style="width:100%"><i class="fas fa-paper-plane"></i> Send message</button>
+      </div>
+      <div class="contact-info">
+        <div class="ci-card"><i class="fab fa-whatsapp" style="color:#25d366"></i><div><h5>WhatsApp (fastest)</h5><p><a href="https://wa.me/919352115498" target="_blank" style="color:var(--brand);font-weight:600">+91 93521 15498</a></p></div></div>
+        <div class="ci-card"><i class="fas fa-phone"></i><div><h5>Phone</h5><p>+91 93521 15498</p></div></div>
+        <div class="ci-card"><i class="fas fa-envelope"></i><div><h5>Email</h5><p>info@consultingcrew.in</p></div></div>
+        <div class="ci-card"><i class="fas fa-map-marker-alt"></i><div><h5>Office</h5><p>C-71, Hastinapur, Vaishali Nagar, Jaipur 302021</p></div></div>
+        <div class="ci-card"><i class="fas fa-clock"></i><div><h5>Hours</h5><p>Mon – Sat · 10:00 AM – 7:00 PM</p></div></div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="brand" onclick="showPage('home');return false" style="color:#fff">
+        <div class="brand-mark">P</div>
+        <div class="brand-text"><strong>Paise Ki Pathshala</strong><span>Educate · Invest · Grow</span></div>
+      </a>
+      <p class="footer-tagline">CA-led tax, investing &amp; MSME compliance platform. A venture by The Consulting Crew, Jaipur.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/the_consulting_crew" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61575474518868" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/the-consulting-crew-jaipur/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/tcc_jaipur" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://wa.me/919352115498" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Calculators</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('calculators');showCalc('regime');return false">Old vs New Regime</a></li>
+        <li><a href="#" onclick="showPage('calculators');showCalc('hra');return false">HRA Exemption</a></li>
+        <li><a href="#" onclick="showPage('calculators');showCalc('tds');return false">TDS on Salary</a></li>
+        <li><a href="#" onclick="showPage('calculators');showCalc('gst');return false">GST</a></li>
+        <li><a href="#" onclick="showPage('calculators');showCalc('composition');return false">Composition vs Regular</a></li>
+        <li><a href="#" onclick="showPage('calculators');showCalc('msme');return false">MSME Loan</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('tracks');return false">Salaried Mastery</a></li>
+        <li><a href="#" onclick="showPage('tracks');return false">Business &amp; MSME</a></li>
+        <li><a href="#" onclick="showPage('tracks');return false">Investor Path</a></li>
+        <li><a href="#" onclick="showPage('tracks');return false">CA-Pro Deep Dives</a></li>
+        <li><a href="blog/">Article archive</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get help</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('ask');return false">Ask CA Ashish</a></li>
+        <li><a href="#" onclick="showPage('contact');return false">Contact form</a></li>
+        <li><a href="https://wa.me/919352115498" target="_blank">WhatsApp</a></li>
+        <li><a href="#" onclick="showPage('calculators');showCalc('calendar');return false">Compliance Calendar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('company');return false">About</a></li>
+        <li><a href="https://consultingcrew.in" target="_blank">The Consulting Crew</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Paise Ki Pathshala Private Limited · CIN U69200RJ2026PTC111856 · All rights reserved.</p>
+    <p>Calculators are estimates. For binding advice, consult a practising CA.</p>
+  </div>
+</div></footer>
+
+<a href="https://wa.me/919352115498?text=I%20want%20a%20free%20CA%20review" target="_blank" class="wa-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
 <script>
-function showPage(page){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+page).classList.add('active');document.querySelectorAll('.nav a[data-page]').forEach(a=>{a.classList.remove('active');if(a.dataset.page===page)a.classList.add('active')});window.scrollTo({top:0,behavior:'smooth'});document.getElementById('mainNav').classList.remove('open')}
+/* ===== Navigation ===== */
+function showPage(page){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  var el=document.getElementById('page-'+page);
+  if(el)el.classList.add('active');
+  document.querySelectorAll('.nav a[data-page]').forEach(a=>{a.classList.remove('active');if(a.dataset.page===page)a.classList.add('active')});
+  window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('mainNav').classList.remove('open');
+}
 function toggleMenu(){document.getElementById('mainNav').classList.toggle('open')}
-function showCalc(id){document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));document.getElementById('calc-'+id).classList.add('active');document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));event.target.classList.add('active')}
-function fmt(n){return new Intl.NumberFormat('en-IN',{maximumFractionDigits:0}).format(n)}
-function calcSIP(){var m=+document.getElementById('sipAmt').value,r=+document.getElementById('sipRate').value/100/12,n=+document.getElementById('sipYears').value*12;var fv=m*((Math.pow(1+r,n)-1)/r)*(1+r);var inv=m*n;document.getElementById('sipResult').innerHTML='<h4>Rs '+fmt(fv)+'</h4><p>Total Investment: Rs '+fmt(inv)+' | Wealth Gained: Rs '+fmt(fv-inv)+'</p>'}
-function calcEMI(){var p=+document.getElementById('emiLoan').value,r=+document.getElementById('emiRate').value/100/12,n=+document.getElementById('emiYears').value*12;var emi=p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);var tot=emi*n;document.getElementById('emiResult').innerHTML='<h4>Rs '+fmt(emi)+'/month</h4><p>Total Payment: Rs '+fmt(tot)+' | Interest: Rs '+fmt(tot-p)+'</p>'}
-function calcFD(){var p=+document.getElementById('fdPrincipal').value,r=+document.getElementById('fdRate').value/100,n=+document.getElementById('fdYears').value;var mat=p*Math.pow(1+r/4,4*n);document.getElementById('fdResult').innerHTML='<h4>Rs '+fmt(mat)+'</h4><p>Interest Earned: Rs '+fmt(mat-p)+'</p>'}
-function calcGST(){var a=+document.getElementById('gstAmt').value,r=+document.getElementById('gstRate').value;var gst=a*r/100;document.getElementById('gstResult').innerHTML='<h4>GST: Rs '+fmt(gst)+'</h4><p>CGST: Rs '+fmt(gst/2)+' | SGST: Rs '+fmt(gst/2)+' | Total: Rs '+fmt(a+gst)+'</p>'}
-function calcHRA(){var b=+document.getElementById('hraBasic').value,d=+document.getElementById('hraDa').value,h=+document.getElementById('hraReceived').value,rent=+document.getElementById('hraRent').value,metro=document.getElementById('hraCity').value==='metro';var a1=h*12,a2=((metro?0.5:0.4)*(b+d))*12,a3=(rent-(0.1*(b+d)))*12;var exempt=Math.min(a1,a2,Math.max(0,a3));document.getElementById('hraResult').innerHTML='<h4>Exemption: Rs '+fmt(exempt)+'/year</h4><p>Taxable HRA: Rs '+fmt(a1-exempt)+'/year</p>'}
-function calcTax(){var inc=+document.getElementById('taxIncome').value,sd=+document.getElementById('taxStdDed').value;var ti=Math.max(0,inc-sd);var tax=0;var slabs=[[300000,0],[400000,0.05],[400000,0.10],[400000,0.15],[400000,0.20],[Infinity,0.30]];var rem=ti;for(var i=0;i<slabs.length&&rem>0;i++){var s=Math.min(rem,slabs[i][0]);tax+=s*slabs[i][1];rem-=s}var cess=tax*0.04;document.getElementById('taxResult').innerHTML='<h4>Tax: Rs '+fmt(tax+cess)+'</h4><p>Income Tax: Rs '+fmt(tax)+' | Cess (4%): Rs '+fmt(cess)+' | Taxable Income: Rs '+fmt(ti)+'</p>'}
-function calcRD(){var m=+document.getElementById('rdAmt').value,r=+document.getElementById('rdRate').value/100/4,n=+document.getElementById('rdYears').value*4;var mat=0;for(var i=0;i<n;i++)mat=(mat+m*3)*((1+r))-mat*0+mat;mat=m*n*3;var si=m*12*+document.getElementById('rdYears').value;var interest=si*+document.getElementById('rdRate').value/100*((+document.getElementById('rdYears').value+1)/2);document.getElementById('rdResult').innerHTML='<h4>Rs '+fmt(si+interest)+'</h4><p>Total Deposits: Rs '+fmt(si)+' | Interest: Rs '+fmt(interest)+'</p>'}
-function calcPPF(){var a=+document.getElementById('ppfAmt').value,r=+document.getElementById('ppfRate').value/100,n=+document.getElementById('ppfYears').value;var bal=0;for(var i=0;i<n;i++)bal=(bal+a)*(1+r);document.getElementById('ppfResult').innerHTML='<h4>Rs '+fmt(bal)+'</h4><p>Total Investment: Rs '+fmt(a*n)+' | Interest: Rs '+fmt(bal-a*n)+'</p>'}
+function showCalc(id){
+  document.querySelectorAll('.calc-tool').forEach(t=>t.classList.remove('active'));
+  var t=document.getElementById('tool-'+id);
+  if(t)t.classList.add('active');
+  document.querySelectorAll('.calc-side a').forEach(a=>{a.classList.remove('active');if(a.dataset.calc===id)a.classList.add('active')});
+}
+
+/* ===== Formatting ===== */
+function inr(n){if(!isFinite(n))n=0;return new Intl.NumberFormat('en-IN',{maximumFractionDigits:0}).format(Math.round(n))}
+function inrSign(n){return (n<0?'-':'')+'₹ '+inr(Math.abs(n))}
+
+/* ===== Tax computation core ===== */
+function newRegimeTax(taxable){
+  /* FY 2025-26 New Regime slabs (post-Budget 2025): 0-3L:0, 3-7L:5, 7-10L:10, 10-12L:15, 12-15L:20, 15+:30 */
+  var slabs=[[300000,0],[400000,0.05],[300000,0.10],[200000,0.15],[300000,0.20],[Infinity,0.30]];
+  var tax=0,rem=taxable;
+  for(var i=0;i<slabs.length&&rem>0;i++){var s=Math.min(rem,slabs[i][0]);tax+=s*slabs[i][1];rem-=s}
+  /* 87A rebate: full rebate up to ₹7L taxable income (new regime) */
+  if(taxable<=700000)tax=0;
+  return tax;
+}
+function oldRegimeTax(taxable,age){
+  var basic=250000;
+  if(age==='60to80')basic=300000;
+  if(age==='above80')basic=500000;
+  var slabs=[[basic,0],[500000-basic,0.05],[500000,0.20],[Infinity,0.30]];
+  if(age==='above80')slabs=[[basic,0],[500000,0.20],[Infinity,0.30]];
+  var tax=0,rem=taxable;
+  for(var i=0;i<slabs.length&&rem>0;i++){var s=Math.min(rem,slabs[i][0]);tax+=s*slabs[i][1];rem-=s}
+  /* 87A rebate: full rebate up to ₹5L taxable income (old regime) */
+  if(taxable<=500000)tax=0;
+  return tax;
+}
+function withCess(tax){return tax*1.04}
+
+/* ===== Old vs New Regime (full + home preview) ===== */
+function _calcRegimeCore(income,age,d80c,d80d,nps,hra,other){
+  var newStdDed=75000;
+  var oldStdDed=50000;
+  var newTaxable=Math.max(0,income-newStdDed);
+  var oldDeductions=Math.min(150000,d80c)+Math.min(25000,d80d)+Math.min(50000,nps)+(hra||0)+(other||0)+oldStdDed;
+  var oldTaxable=Math.max(0,income-oldDeductions);
+  var newTax=withCess(newRegimeTax(newTaxable));
+  var oldTax=withCess(oldRegimeTax(oldTaxable,age));
+  return {newTaxable:newTaxable,oldTaxable:oldTaxable,newTax:newTax,oldTax:oldTax,oldDeductions:oldDeductions};
+}
+function calcRegime(){
+  var income=+document.getElementById('regIncome').value||0;
+  var age=document.getElementById('regAge').value;
+  var d80c=+document.getElementById('reg80c').value||0;
+  var d80d=+document.getElementById('reg80d').value||0;
+  var nps=+document.getElementById('regNps').value||0;
+  var hra=+document.getElementById('regHra').value||0;
+  var other=+document.getElementById('regOther').value||0;
+  var r=_calcRegimeCore(income,age,d80c,d80d,nps,hra,other);
+  var save=Math.abs(r.newTax-r.oldTax);
+  var winner=r.newTax<r.oldTax?'New':'Old';
+  var box=document.getElementById('regResult');
+  box.classList.add('active');
+  box.innerHTML=
+    '<div class="compare-row">'+
+      '<div class="compare-out '+(winner==='Old'?'win':'')+'"><div class="l">Old Regime</div><div class="v">₹ '+inr(r.oldTax)+'</div><div class="sub">Taxable: ₹ '+inr(r.oldTaxable)+'</div></div>'+
+      '<div class="compare-out '+(winner==='New'?'win':'')+'"><div class="l">New Regime</div><div class="v">₹ '+inr(r.newTax)+'</div><div class="sub">Taxable: ₹ '+inr(r.newTaxable)+'</div></div>'+
+    '</div>'+
+    '<div class="verdict"><span><strong>'+winner+' regime</strong> wins for you.</span><span class="save">Save ₹ '+inr(save)+'</span></div>'+
+    '<div class="result-actions">'+
+      '<a href="https://wa.me/919352115498?text=Please%20review%20my%20Old%20vs%20New%20regime%20decision" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Free CA review</a>'+
+      '<a href="#" onclick="showPage(\'ask\');return false" class="btn btn-secondary">Read related Q&amp;As</a>'+
+    '</div>';
+}
+function calcHomeRegime(){
+  var income=+document.getElementById('hRegIncome').value||0;
+  var age=document.getElementById('hRegAge').value;
+  var d80c=+document.getElementById('hReg80c').value||0;
+  var d80d=+document.getElementById('hReg80d').value||0;
+  var nps=+document.getElementById('hRegNps').value||0;
+  var hra=+document.getElementById('hRegHra').value||0;
+  var r=_calcRegimeCore(income,age,d80c,d80d,nps,hra,0);
+  var save=Math.abs(r.newTax-r.oldTax);
+  var winner=r.newTax<r.oldTax?'New':'Old';
+  var box=document.getElementById('hRegResult');
+  box.classList.add('active');
+  box.innerHTML=
+    '<div class="compare-row">'+
+      '<div class="compare-out '+(winner==='Old'?'win':'')+'"><div class="l">Old Regime</div><div class="v">₹ '+inr(r.oldTax)+'</div><div class="sub">Taxable: ₹ '+inr(r.oldTaxable)+'</div></div>'+
+      '<div class="compare-out '+(winner==='New'?'win':'')+'"><div class="l">New Regime</div><div class="v">₹ '+inr(r.newTax)+'</div><div class="sub">Taxable: ₹ '+inr(r.newTaxable)+'</div></div>'+
+    '</div>'+
+    '<div class="verdict"><span><strong>'+winner+' regime</strong> wins.</span><span class="save">Save ₹ '+inr(save)+'</span></div>';
+}
+
+/* ===== HRA ===== */
+function calcHRAfull(){
+  var b=+document.getElementById('hraBasic').value||0;
+  var d=+document.getElementById('hraDa').value||0;
+  var h=+document.getElementById('hraReceived').value||0;
+  var rent=+document.getElementById('hraRent').value||0;
+  var metro=document.getElementById('hraCity').value==='metro';
+  var salary=(b+d)*12;
+  var a1=h*12;
+  var a2=(metro?0.5:0.4)*salary;
+  var a3=Math.max(0,(rent*12)-(0.1*salary));
+  var exempt=Math.min(a1,a2,a3);
+  var taxable=a1-exempt;
+  var box=document.getElementById('hraResult');
+  box.classList.add('active');
+  box.innerHTML='<div class="result-headline">₹ '+inr(exempt)+' / year exempt</div>'+
+    '<div class="result-sub">Taxable HRA: ₹ '+inr(taxable)+' / year</div>'+
+    '<div class="result-row"><span>Actual HRA received</span><strong>₹ '+inr(a1)+'</strong></div>'+
+    '<div class="result-row"><span>'+(metro?'50%':'40%')+' of (Basic + DA)</span><strong>₹ '+inr(a2)+'</strong></div>'+
+    '<div class="result-row"><span>Rent − 10% of (Basic + DA)</span><strong>₹ '+inr(a3)+'</strong></div>'+
+    '<div class="result-row"><span>Minimum (exempt)</span><strong style="color:var(--green)">₹ '+inr(exempt)+'</strong></div>'+
+    '<div class="result-actions"><a href="https://wa.me/919352115498?text=Please%20verify%20my%20HRA%20exemption" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Verify with CA</a></div>';
+}
+
+/* ===== TDS ===== */
+function calcTDS(){
+  var sal=+document.getElementById('tdsSal').value||0;
+  var regime=document.getElementById('tdsRegime').value;
+  var ded=+document.getElementById('tdsDed').value||0;
+  var months=+document.getElementById('tdsMonths').value||12;
+  var tax;
+  if(regime==='new'){
+    var taxable=Math.max(0,sal-75000);
+    tax=withCess(newRegimeTax(taxable));
+  }else{
+    var taxableO=Math.max(0,sal-50000-ded);
+    tax=withCess(oldRegimeTax(taxableO,'below60'));
+  }
+  var monthly=tax/Math.max(1,months);
+  var box=document.getElementById('tdsResult');
+  box.classList.add('active');
+  box.innerHTML='<div class="result-headline">₹ '+inr(monthly)+' / month TDS</div>'+
+    '<div class="result-sub">Section 192 · '+(regime==='new'?'New':'Old')+' regime</div>'+
+    '<div class="result-row"><span>Annual TDS liability</span><strong>₹ '+inr(tax)+'</strong></div>'+
+    '<div class="result-row"><span>Net take-home / year</span><strong>₹ '+inr(sal-tax)+'</strong></div>'+
+    '<div class="result-row"><span>Net take-home / month</span><strong>₹ '+inr((sal-tax)/12)+'</strong></div>'+
+    '<div class="result-actions"><a href="https://wa.me/919352115498?text=Please%20review%20my%20TDS%20calculation" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> CA review</a></div>';
+}
+
+/* ===== GST full ===== */
+function calcGSTfull(){
+  var amt=+document.getElementById('gstAmount').value||0;
+  var rate=+document.getElementById('gstRate').value||0;
+  var add=document.getElementById('gstDir').value==='add';
+  var gst,base,total;
+  if(add){base=amt;gst=amt*rate/100;total=amt+gst}
+  else{base=amt*100/(100+rate);gst=amt-base;total=amt}
+  var box=document.getElementById('gstResult');
+  box.classList.add('active');
+  box.innerHTML='<div class="result-headline">GST: ₹ '+inr(gst)+'</div>'+
+    '<div class="result-sub">'+(add?'Added':'Removed')+' '+rate+'% GST</div>'+
+    '<div class="result-row"><span>Base amount</span><strong>₹ '+inr(base)+'</strong></div>'+
+    '<div class="result-row"><span>CGST ('+(rate/2)+'%)</span><strong>₹ '+inr(gst/2)+'</strong></div>'+
+    '<div class="result-row"><span>SGST ('+(rate/2)+'%)</span><strong>₹ '+inr(gst/2)+'</strong></div>'+
+    '<div class="result-row"><span>Total (incl. GST)</span><strong>₹ '+inr(total)+'</strong></div>';
+}
+
+/* ===== GST Composition vs Regular ===== */
+function calcComposition(){
+  var t=+document.getElementById('compTurnover').value||0;
+  var type=document.getElementById('compType').value;
+  var output=+document.getElementById('compOutput').value||0;
+  var itc=+document.getElementById('compITC').value||0;
+  var compRate=type==='trader'?0.01:type==='restaurant'?0.05:0.06;
+  var compTax=t*compRate;
+  var regularTax=Math.max(0,output-itc);
+  var threshold=type==='service'?5000000:15000000;
+  var eligible=t<=threshold;
+  var winner=compTax<regularTax?'Composition':'Regular';
+  var save=Math.abs(compTax-regularTax);
+  var box=document.getElementById('compResult');
+  box.classList.add('active');
+  var notice=eligible?'<div class="eligible yes"><i class="fas fa-circle-check"></i> Eligible for Composition (turnover &le; ₹'+inr(threshold)+')</div>':'<div class="eligible no"><i class="fas fa-circle-xmark"></i> Not eligible for Composition (turnover &gt; ₹'+inr(threshold)+')</div>';
+  box.innerHTML=notice+
+    '<div class="compare-row">'+
+      '<div class="compare-out '+(winner==='Composition'&&eligible?'win':'')+'"><div class="l">Composition</div><div class="v">₹ '+inr(compTax)+'</div><div class="sub">'+(compRate*100).toFixed(0)+'% of turnover · no ITC</div></div>'+
+      '<div class="compare-out '+(winner==='Regular'||!eligible?'win':'')+'"><div class="l">Regular</div><div class="v">₹ '+inr(regularTax)+'</div><div class="sub">Output − ITC</div></div>'+
+    '</div>'+
+    '<div class="verdict"><span><strong>'+(eligible?winner:'Regular (only option)')+'</strong> works for you.</span>'+(eligible?'<span class="save">Save ₹ '+inr(save)+'</span>':'')+'</div>'+
+    '<div class="result-actions"><a href="https://wa.me/919352115498?text=Help%20me%20decide%20Composition%20vs%20Regular%20GST" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> CA review</a></div>';
+}
+
+/* ===== MSME Loan Eligibility ===== */
+function calcMSME(){
+  var turnover=+document.getElementById('msmeTurnover').value||0;
+  var investment=+document.getElementById('msmeInvestment').value||0;
+  var loan=+document.getElementById('msmeLoan').value||0;
+  var vintage=+document.getElementById('msmeVintage').value||0;
+  var udyam=document.getElementById('msmeUdyam').value==='yes';
+  var state=document.getElementById('msmeState').value;
+
+  /* MSME classification: micro <=₹5Cr T/O & ₹1Cr inv; small <=₹50Cr T/O & ₹10Cr inv; medium <=₹250Cr T/O & ₹50Cr inv */
+  var classification='Not MSME';
+  if(turnover<=50000000&&investment<=10000000)classification='Micro';
+  if((turnover>50000000&&turnover<=500000000)||(investment>10000000&&investment<=100000000))classification='Small';
+  if((turnover>500000000&&turnover<=2500000000)||(investment>100000000&&investment<=500000000))classification='Medium';
+
+  /* Mudra: up to ₹10L Shishu/Kishore/Tarun. (Now up to ₹20L Tarun Plus.) */
+  var mudraOk=loan<=2000000;
+  /* CGTMSE: collateral-free up to ₹5 Cr for MSME with Udyam */
+  var cgtmseOk=udyam&&loan<=50000000;
+  /* PMEGP: new units up to ₹50L (mfg) / ₹20L (svc), age & beneficiary criteria — simplified */
+  var pmegpOk=vintage<=2&&loan<=5000000;
+  /* RIPS (Rajasthan Investment Promotion Scheme) — interest subvention for new units in RJ */
+  var ripsOk=state==='rj'&&classification!=='Not MSME';
+
+  var box=document.getElementById('msmeResult');
+  box.classList.add('active');
+  var matched=0;[mudraOk,cgtmseOk,pmegpOk,ripsOk].forEach(function(x){if(x)matched++});
+  var headline=matched===0?'no':matched<=2?'maybe':'yes';
+  box.innerHTML=
+    '<div class="eligible '+headline+'"><i class="fas fa-'+(headline==='yes'?'circle-check':headline==='maybe'?'circle-info':'circle-xmark')+'"></i> '+
+      (headline==='yes'?'You likely qualify for '+matched+' schemes':headline==='maybe'?'You may qualify for '+matched+' scheme(s) — verify details':'No scheme matched — check criteria')+
+    '</div>'+
+    '<div class="result-row"><span>MSME classification</span><strong>'+classification+'</strong></div>'+
+    '<div class="result-row"><span>Udyam registered</span><strong>'+(udyam?'Yes':'No — apply first')+'</strong></div>'+
+    '<div class="scheme-list">'+
+      '<div class="scheme-item '+(mudraOk?'match':'')+'"><strong>'+(mudraOk?'✓ ':'')+'PM Mudra (Shishu/Kishore/Tarun)</strong><span>Loans up to ₹20L for micro units · '+(mudraOk?'Eligible':'Loan amount exceeds ₹20L cap')+'</span></div>'+
+      '<div class="scheme-item '+(cgtmseOk?'match':'')+'"><strong>'+(cgtmseOk?'✓ ':'')+'CGTMSE</strong><span>Collateral-free up to ₹5 Cr · '+(cgtmseOk?'Eligible (Udyam OK)':'Needs Udyam &amp; loan within ₹5 Cr')+'</span></div>'+
+      '<div class="scheme-item '+(pmegpOk?'match':'')+'"><strong>'+(pmegpOk?'✓ ':'')+'PMEGP</strong><span>For new units (≤2 yrs) · '+(pmegpOk?'Eligible — apply via KVIC/DIC':'Designed for new units &lt;2 yrs old')+'</span></div>'+
+      '<div class="scheme-item '+(ripsOk?'match':'')+'"><strong>'+(ripsOk?'✓ ':'')+'Rajasthan RIPS</strong><span>State subsidy for RJ MSMEs · '+(ripsOk?'Eligible':'Rajasthan-only scheme')+'</span></div>'+
+    '</div>'+
+    '<div class="result-actions" style="margin-top:18px">'+
+      '<a href="https://wa.me/919352115498?text=I%20want%20MSME%20loan%20application%20help" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Get application help</a>'+
+      '<a href="#" onclick="showPage(\'tracks\');return false" class="btn btn-secondary">Read MSME track</a>'+
+    '</div>';
+}
+
+/* ===== SIP / Lumpsum ===== */
+function calcSIPfull(){
+  var m=+document.getElementById('sipMonthly').value||0;
+  var l=+document.getElementById('sipLump').value||0;
+  var yrs=+document.getElementById('sipYears').value||1;
+  var rate=+document.getElementById('sipRate').value||0;
+  var infl=+document.getElementById('sipInflation').value||0;
+  var r=rate/100/12, n=yrs*12;
+  var sipFV=m*((Math.pow(1+r,n)-1)/r)*(1+r);
+  var lumpFV=l*Math.pow(1+rate/100,yrs);
+  var total=sipFV+lumpFV;
+  var invested=m*n+l;
+  var realRate=((1+rate/100)/(1+infl/100))-1;
+  var realFV=invested*Math.pow(1+realRate,yrs);
+  var box=document.getElementById('sipResult');
+  box.classList.add('active');
+  box.innerHTML='<div class="result-headline">₹ '+inr(total)+'</div>'+
+    '<div class="result-sub">Projected wealth after '+yrs+' years</div>'+
+    '<div class="result-row"><span>SIP corpus</span><strong>₹ '+inr(sipFV)+'</strong></div>'+
+    '<div class="result-row"><span>Lumpsum growth</span><strong>₹ '+inr(lumpFV)+'</strong></div>'+
+    '<div class="result-row"><span>Total invested</span><strong>₹ '+inr(invested)+'</strong></div>'+
+    '<div class="result-row"><span>Wealth gained</span><strong style="color:var(--green)">₹ '+inr(total-invested)+'</strong></div>'+
+    '<div class="result-row"><span>Inflation-adjusted (today\'s money)</span><strong>₹ '+inr(total/Math.pow(1+infl/100,yrs))+'</strong></div>';
+}
+
+/* ===== EMI ===== */
+function calcEMIfull(){
+  var p=+document.getElementById('emiLoan').value||0;
+  var r=(+document.getElementById('emiRate').value||0)/100/12;
+  var n=(+document.getElementById('emiYears').value||0)*12;
+  if(r===0){var emi=p/n;var tot=p;}
+  else{var emi=p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);var tot=emi*n;}
+  var box=document.getElementById('emiResult');
+  box.classList.add('active');
+  box.innerHTML='<div class="result-headline">₹ '+inr(emi)+' / month</div>'+
+    '<div class="result-sub">Equated Monthly Instalment</div>'+
+    '<div class="result-row"><span>Principal</span><strong>₹ '+inr(p)+'</strong></div>'+
+    '<div class="result-row"><span>Total interest</span><strong>₹ '+inr(tot-p)+'</strong></div>'+
+    '<div class="result-row"><span>Total payment</span><strong>₹ '+inr(tot)+'</strong></div>';
+}
+
+/* ===== Compliance Calendar ===== */
+var CAL_DATA = {
+  'Jan':[{d:7,t:'TDS Payment — Dec',k:'tds'},{d:11,t:'GSTR-1 — Dec',k:'gst'},{d:15,t:'Form 24Q/26Q — Q3',k:'tds'},{d:20,t:'GSTR-3B — Dec',k:'gst'},{d:30,t:'TCS quarterly certificate',k:'tds'}],
+  'Feb':[{d:7,t:'TDS Payment — Jan',k:'tds'},{d:11,t:'GSTR-1 — Jan',k:'gst'},{d:20,t:'GSTR-3B — Jan',k:'gst'}],
+  'Mar':[{d:7,t:'TDS Payment — Feb',k:'tds'},{d:15,t:'Advance Tax — Q4',k:'itr'},{d:20,t:'GSTR-3B — Feb',k:'gst'},{d:31,t:'Belated/revised ITR FY 2024-25',k:'itr'},{d:31,t:'Linking PAN-Aadhaar',k:'itr'}],
+  'Apr':[{d:7,t:'TDS Payment — Mar',k:'tds'},{d:11,t:'GSTR-1 — Mar',k:'gst'},{d:18,t:'CMP-08 — Composition Q4',k:'gst'},{d:20,t:'GSTR-3B — Mar',k:'gst'},{d:30,t:'Form 61A — SFT',k:'itr'}],
+  'May':[{d:7,t:'TDS Payment — Apr',k:'tds'},{d:11,t:'GSTR-1 — Apr',k:'gst'},{d:15,t:'Form 16 issuance',k:'tds'},{d:20,t:'GSTR-3B — Apr',k:'gst'},{d:30,t:'Form 49C — Liaison offices',k:'roc'},{d:31,t:'TDS Return Q4 (24Q/26Q)',k:'tds'}],
+  'Jun':[{d:7,t:'TDS Payment — May',k:'tds'},{d:11,t:'GSTR-1 — May',k:'gst'},{d:15,t:'Advance Tax — Q1',k:'itr'},{d:20,t:'GSTR-3B — May',k:'gst'},{d:30,t:'DPT-3 (Companies)',k:'roc'}],
+  'Jul':[{d:7,t:'TDS Payment — Jun',k:'tds'},{d:11,t:'GSTR-1 — Jun',k:'gst'},{d:15,t:'TDS Return Q1',k:'tds'},{d:18,t:'CMP-08 — Composition Q1',k:'gst'},{d:20,t:'GSTR-3B — Jun',k:'gst'},{d:31,t:'ITR-1 / ITR-4 (non-audit)',k:'itr'}],
+  'Aug':[{d:7,t:'TDS Payment — Jul',k:'tds'},{d:11,t:'GSTR-1 — Jul',k:'gst'},{d:20,t:'GSTR-3B — Jul',k:'gst'}],
+  'Sep':[{d:7,t:'TDS Payment — Aug',k:'tds'},{d:11,t:'GSTR-1 — Aug',k:'gst'},{d:15,t:'Advance Tax — Q2',k:'itr'},{d:20,t:'GSTR-3B — Aug',k:'gst'},{d:30,t:'DIR-3 KYC for directors',k:'roc'},{d:30,t:'Tax audit report (3CD)',k:'itr'}],
+  'Oct':[{d:7,t:'TDS Payment — Sep',k:'tds'},{d:11,t:'GSTR-1 — Sep',k:'gst'},{d:15,t:'TDS Return Q2',k:'tds'},{d:18,t:'CMP-08 — Composition Q2',k:'gst'},{d:20,t:'GSTR-3B — Sep',k:'gst'},{d:31,t:'ITR (audit cases)',k:'itr'},{d:31,t:'Form ADT-1 (auditor appt)',k:'roc'}],
+  'Nov':[{d:7,t:'TDS Payment — Oct',k:'tds'},{d:11,t:'GSTR-1 — Oct',k:'gst'},{d:20,t:'GSTR-3B — Oct',k:'gst'},{d:29,t:'Form MGT-7 / 7A annual return',k:'roc'},{d:30,t:'AOC-4 financial statements',k:'roc'}],
+  'Dec':[{d:7,t:'TDS Payment — Nov',k:'tds'},{d:11,t:'GSTR-1 — Nov',k:'gst'},{d:15,t:'Advance Tax — Q3',k:'itr'},{d:20,t:'GSTR-3B — Nov',k:'gst'},{d:31,t:'GSTR-9 / 9C — annual return',k:'gst'},{d:31,t:'Belated/revised ITR — extended cases',k:'itr'}]
+};
+function initCalendarMonth(){
+  var sel=document.getElementById('calMonth');if(!sel||sel.options.length)return;
+  Object.keys(CAL_DATA).forEach(function(m,i){var o=document.createElement('option');o.value=m;o.textContent=m;if(i===4)o.selected=true;sel.appendChild(o)});
+}
+function calcCalendar(){
+  var m=document.getElementById('calMonth').value||'May';
+  var type=document.getElementById('calType').value;
+  var items=CAL_DATA[m]||[];
+  var filtered=items.filter(function(it){
+    if(type==='all')return true;
+    if(type==='gst')return it.k==='gst';
+    if(type==='company')return it.k==='roc'||it.k==='gst'||it.k==='tds';
+    if(type==='salaried')return it.k==='itr'||it.k==='tds';
+    return true;
+  });
+  var rows=filtered.map(function(it){
+    return '<div class="cal-row"><div class="cal-date"><div class="d">'+(it.d<10?'0'+it.d:it.d)+'</div><div class="m">'+m+'</div></div><div class="cal-info"><h5>'+it.t+'</h5></div><span class="cal-pill '+it.k+'">'+it.k.toUpperCase()+'</span></div>';
+  }).join('');
+  var box=document.getElementById('calResult');
+  box.classList.add('active');
+  box.innerHTML='<div class="cal-list" style="border-radius:12px"><div class="cal-head"><h4>'+m+' deadlines</h4><span class="sel">'+filtered.length+' items</span></div>'+rows+'</div>'+
+    '<div class="result-actions" style="margin-top:18px"><a href="https://wa.me/919352115498?text=Subscribe%20me%20to%20WhatsApp%20compliance%20reminders" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp reminders</a></div>';
+}
+
+/* ===== Q&A ===== */
+var QA_FULL = [
+  {cat:'regime',q:'My CTC is ₹14L and I claim ₹2.5L in 80C+NPS+80D. Which regime saves more?',a:'In FY 2025-26 the new regime gives you ₹75,000 standard deduction and tighter slabs, while the old regime lets you claim 80C/80D/HRA. At ₹14L gross with ₹2.5L of deductions plus a likely HRA, the <strong>old regime is usually marginally cheaper by ₹6–18k</strong>. Run our Old vs New calculator to see your exact gap.',by:'CA Ashish Sharma',date:'FY 2025-26'},
+  {cat:'gst',q:'I run a kirana doing ₹65L turnover. Composition or Regular GST?',a:'At ₹65L turnover you\'re eligible for Composition (1% for traders). Wins if customers don\'t need GST invoices and inward ITC is small — most kiranas fit. Use our Composition vs Regular calculator to see the net-outgo gap.',by:'CA Ashish Sharma',date:'8 May 2026'},
+  {cat:'msme',q:'Can a 2-yr-old printing press in Jaipur get CGTMSE-backed loan?',a:'Yes. CGTMSE covers Udyam-registered MSMEs for collateral-free loans up to ₹5Cr. Bank will need Udyam, 3 yrs ITRs, GST returns &amp; project report.',by:'CA Ashish Sharma',date:'MSME desk'},
+  {cat:'hra',q:'I pay rent to my mother — is the HRA exemption actually allowed?',a:'Yes — but keep a rent agreement, transfer via bank, and your mother declares the income in her ITR. Family-payment is not a disqualifier; lack of proof is.',by:'CA Ashish Sharma',date:'Salaried desk'},
+  {cat:'capital',q:'Sold equity MF after 14 months. STCG or LTCG, and how much tax?',a:'14 months = LTCG. Taxed at 12.5% on gains above ₹1.25L per year (post Jul 2024). Gain of ₹2L → 12.5% × ₹75k = ₹9,375 + cess.',by:'CA Ashish Sharma',date:'Investor desk'},
+  {cat:'tds',q:'Employer is deducting TDS without my 80C — how do I fix it?',a:'Submit Form 12BB with investment proofs to HR. They\'ll recompute TDS for remaining months. Year-end excess can be claimed back via ITR refund.',by:'CA Ashish Sharma',date:'Salaried desk'},
+  {cat:'gst',q:'When does my business need to register for GST?',a:'Goods turnover &gt; ₹40L (₹20L in special states) or service turnover &gt; ₹20L. Also mandatory if inter-state supply, e-commerce, or RCM applicability.',by:'CA Ashish Sharma',date:'GST desk'},
+  {cat:'regime',q:'Can I switch back from New to Old regime next year?',a:'If you have no business income — yes, switch each year freely. If you have business/profession income, you can switch only once in your lifetime back to old.',by:'CA Ashish Sharma',date:'Regime desk'},
+  {cat:'msme',q:'Difference between Udyam Registration and MSME certificate?',a:'Udyam is the new registration (since 2020) — it replaced the old MSME/Udyog Aadhaar. There\'s only one valid certificate today: the Udyam one.',by:'CA Ashish Sharma',date:'MSME desk'},
+];
+function renderQAList(filter){
+  var c=document.getElementById('qaListFull');if(!c)return;
+  c.innerHTML=QA_FULL.filter(function(x){return filter==='all'||x.cat===filter}).map(function(x,i){
+    return '<div class="qa-item" onclick="toggleQ(this)"><div class="qa-q"><div class="qmeta"><span class="qcat">'+x.cat+'</span><span class="qtext">'+x.q+'</span></div><div class="qtoggle"><i class="fas fa-chevron-down"></i></div></div><div class="qa-a">'+x.a+'<div class="byline"><strong>'+x.by+'</strong> · '+x.date+'</div></div></div>';
+  }).join('');
+}
+function toggleQ(el){el.classList.toggle('open')}
+
+document.addEventListener('DOMContentLoaded',function(){
+  initCalendarMonth();
+  renderQAList('all');
+  /* Q&A filter buttons */
+  var f=document.getElementById('qaFilter');
+  if(f){f.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;renderQAList(b.dataset.cat);f.querySelectorAll('button').forEach(function(x){x.classList.remove('btn-primary');x.classList.add('btn-secondary')});b.classList.remove('btn-secondary');b.classList.add('btn-primary')})}
+  /* Compute hero preview on load */
+  try{calcHomeRegime()}catch(e){}
+});
 </script>
-</body></html>
+</body>
+</html>
